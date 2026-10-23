@@ -1,0 +1,5 @@
+---
+import {text,type Locale} from '../i18n'; import Icon from './Icon.astro';
+const {locale='es'}=Astro.props as {locale:Locale}; const t=text[locale];
+---
+<div class="school-art" aria-label={t.schoolKicker}><div class="school-grid"></div><Icon name="game" size={64}/><div>{t.schoolArt.map((word,i)=><span class:list={[i===1&&'gradient-text']}>{word}</span>)}</div><span class="school-caption">{t.schoolKicker}</span></div>

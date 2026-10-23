@@ -1,0 +1,1597 @@
+# MASTER PROMPT — BEGAMER AGENCY
+## Planificación estratégica, arquitectura y desarrollo web profesional
+**Proyecto:** BeGamer Agency Website 2026  
+**Versión:** 3.0 — Desarrollo y producción  
+**Idiomas:** Español / Inglés  
+**Plataforma de destino:** Hosting con cPanel  
+**Control de versiones:** Git + GitHub  
+**Diseño:** Scroll-based, minimalista, interactivo y 3D
+
+---
+
+# 1. ROL Y OBJETIVO DE LA IA
+
+Actúa como un equipo multidisciplinario senior formado por:
+
+- Digital Strategy Director.
+- UX/UI Designer especializado en experiencias web interactivas.
+- Creative Developer y especialista en WebGL/Three.js.
+- Frontend Software Architect.
+- Technical SEO Specialist.
+- Cybersecurity Engineer.
+- DevOps Engineer especializado en GitHub y cPanel.
+- Web Performance & Accessibility Specialist.
+- Conversion Rate Optimization (CRO) Specialist.
+
+Tu misión es **planificar exhaustivamente y preparar la implementación de la página web oficial de BeGamer Agency**, utilizando el material que acompaña este prompt.
+
+La web deberá funcionar como portafolio corporativo, escaparate de experiencias, presentación de servicios y herramienta de captación de clientes B2B.
+
+No se busca una web gaming convencional ni una plantilla de agencia. Buscamos una experiencia digital de nivel internacional, minimalista, tecnológica y visualmente distintiva.
+
+## Resultados que debes entregar
+
+**Primera entrega: planificación estratégica y técnica**
+
+Produce un documento completo que defina el proyecto, su estructura, las decisiones tecnológicas, la metodología de desarrollo, la seguridad, el SEO, el despliegue y las fases de trabajo.
+
+**Segunda entrega: prompt técnico de implementación**
+
+Después del plan, genera un nuevo prompt extremadamente detallado, autocontenido y ejecutable por un agente de desarrollo como Claude Code, Cursor o ChatGPT Work.
+
+Ese segundo prompt deberá traducir las decisiones anteriores en instrucciones concretas para construir el sitio, con sus componentes, rutas, estructura de archivos, dependencias, funcionalidades y pruebas.
+
+**Tercera etapa: desarrollo**
+
+Cuando se ejecute el prompt técnico, el agente deberá desarrollar la aplicación por fases, comprobar los resultados y preparar el repositorio para producción.
+
+No empieces a programar antes de producir la planificación solicitada.
+
+No pidas nuevamente información que ya esté incluida aquí. Identifica los datos indispensables que falten, utiliza placeholders explícitos cuando corresponda y continúa con las tareas que no dependan de ellos.
+
+---
+
+# 2. CONTEXTO DE LA EMPRESA
+
+## Identidad
+
+**Nombre comercial:** BeGamer Agency  
+**Sector:** Gaming marketing, esports, activaciones y experiencias interactivas.  
+**Mercado:** Perú y Latinoamérica, con capacidad de comunicación internacional.  
+**Modelo comercial:** Principalmente B2B e institucional.
+
+BeGamer desarrolla proyectos que conectan marcas, instituciones y comunidades mediante la cultura de los videojuegos.
+
+### Posicionamiento
+
+BeGamer no debe proyectarse únicamente como organizadora de torneos.
+
+Debe posicionarse como una agencia que utiliza el gaming para crear experiencias relevantes para marcas, empresas, instituciones educativas y comunidades.
+
+### Audiencias comerciales
+
+1. Responsables de marketing y branding.
+2. Empresas interesadas en activaciones y team building.
+3. Marcas dirigidas a audiencias jóvenes y comunidades gaming.
+4. Directores de colegios e institutos.
+5. Responsables de innovación educativa.
+6. Productoras, organizadores y operadores de eventos.
+7. Organizaciones y comunidades esports.
+
+### Propuesta de valor
+
+**Hacemos que las marcas sean parte del juego.**
+
+BeGamer transforma el gaming en un medio para conectar personas, activar comunidades y desarrollar experiencias presenciales y digitales.
+
+### Objetivos comerciales de la web
+
+- Captar solicitudes de cotización.
+- Generar contactos comerciales cualificados.
+- Presentar servicios de manera clara y convincente.
+- Demostrar experiencia mediante proyectos reales.
+- Posicionar a BeGamer como una agencia especializada.
+- Mejorar visibilidad orgánica en Google.
+- Ofrecer una experiencia bilingüe.
+- Permitir el crecimiento del portafolio sin rediseñar toda la web.
+
+No inventes años de trayectoria, premios, colaboradores, cifras, clientes ni resultados.
+
+---
+
+# 3. REFERENCIA VISUAL OBLIGATORIA
+
+Se adjunta una imagen que representa el diseño visual aprobado de la web.
+
+**Esta imagen es la referencia maestra.**
+
+No debes reinterpretarla libremente ni convertirla en un diseño genérico.
+
+Preserva su composición visual, jerarquía, relación entre imágenes y tipografía, tratamiento fotográfico, equilibrio de espacios y elementos de navegación.
+
+El trabajo consiste en convertir esa referencia visual en un sistema web real, responsivo, funcional y mantenible.
+
+## Características principales
+
+- Fondo negro azulado.
+- Acentos violeta, azul eléctrico y cian.
+- Tipografía condensada visualmente en titulares, manteniendo fidelidad al manual de marca.
+- Grandes fotografías de eventos reales.
+- Separaciones sutiles entre secciones.
+- Marco visual limpio.
+- Espacio negativo.
+- Menús discretos.
+- Botones con bordes de degradado.
+- Composiciones asimétricas.
+- Elementos tridimensionales estratégicos.
+- Barra lateral vertical que indica el progreso de navegación.
+
+No agregar animaciones, efectos, contenedores, ilustraciones ni decoraciones que no mejoren realmente la experiencia.
+
+## Colores de marca
+
+- Fondo noche: `#080C13`
+- Blanco: `#FAFCFF`
+- Violeta: `#9B65DF`
+- Azul: `#6E92E2`
+- Cian: `#36CAE6`
+
+Degradado de marca: violeta → azul → cian.
+
+Estos colores son referencias del Manual de Identidad Visual V3. Verificar los valores y geometrías definitivos con los archivos maestros antes de producción.
+
+## Tipografía
+
+- Inter.
+- Inter Display.
+
+Utilizar títulos de alto peso, cuerpos legibles y etiquetas discretas. Si la referencia emplea una tipografía condensada no incluida en el manual, evaluar una alternativa compatible sin modificar el logotipo.
+
+---
+
+# 4. RECURSOS GRÁFICOS EXISTENTES
+
+Utilizar los recursos originales suministrados por el usuario.
+
+## Logo del header
+
+**Archivo:** `logo(20261022-215731).png`
+
+Es un logo blanco.
+
+Debe aparecer a la izquierda del header.
+
+Reglas:
+
+- No recrear sus letras.
+- No deformar.
+- No alterar proporciones.
+- No aplicar degradados al archivo.
+- No sustituirlo por una versión generada por IA.
+- Usar una versión vectorial fiel si posteriormente se proporciona.
+
+## Isotipo BG para Home
+
+Utilizar el isotipo original BG como referencia geométrica para construir un recurso 3D.
+
+El recurso 3D debe tener materiales premium, caras con volumen e iluminación controlada.
+
+Diferenciar claramente el logo del header del modelo 3D del Home.
+
+## Fotografías
+
+**Corporate Gaming**
+
+Archivo: `marketing.jpg`
+
+Utilizar esta fotografía real en el servicio Corporate Gaming. Preservar completamente la identidad y características de las personas.
+
+**Portafolio de proyectos**
+
+- `ascension.png`
+- `ecup.jpg`
+- `nubyx(20261022-214532).png`
+- `upc(20261022-214532).jpg`
+
+Utilizar estos cuatro archivos originales como fotografías del portafolio.
+
+Se permite ajustar encuadres mediante CSS, colorimetría sutil y overlays no destructivos.
+
+No sustituir los sujetos por personas sintéticas ni modificar la identidad de los participantes.
+
+Los nombres comerciales exactos, clientes y resultados asociados con estas fotografías deberán verificarse antes de publicar cada caso.
+
+**Documentación de marca**
+
+Se dispone del documento `BeGamer_Manual_de_Marca_2026_V3_Modular_Minimal.pdf`.
+
+Debe utilizarse como referencia normativa de diseño, respetando sus advertencias sobre variantes de logo y colores pendientes de aprobación.
+
+---
+
+# 5. ARQUITECTURA DE NAVEGACIÓN
+
+La aplicación será bilingüe, con español como idioma predeterminado.
+
+## Header fijo
+
+Elementos:
+
+1. Logo BeGamer blanco.
+2. Inicio.
+3. Servicios.
+4. Proyectos.
+5. Nosotros.
+6. Contacto.
+7. Selector ES / EN.
+8. CTA «Hablemos».
+
+El header debe tener comportamiento sticky o fixed, manteniendo su legibilidad mientras el usuario navega.
+
+La activación del idioma inglés no debe devolver al usuario al Home cuando exista una página equivalente.
+
+## Navegación vertical scroll-based
+
+Implementar una barra vertical discreta en el lado derecho.
+
+Secciones:
+
+- Inicio.
+- Servicios.
+- Confían en nosotros.
+- Proyectos.
+- Nosotros.
+- Contacto.
+
+Características:
+
+- Indicador de sección activa.
+- Progreso asociado al scroll.
+- Navegación mediante clic.
+- Transiciones suaves.
+- Compatibilidad con teclado.
+- Adaptación o sustitución para móviles.
+
+No incorporar números decorativos en los títulos.
+
+## Estructura de rutas
+
+### Español
+
+- `/es`
+- `/es/servicios`
+- `/es/servicios/corporate-gaming`
+- `/es/servicios/colegios`
+- `/es/servicios/game-building`
+- `/es/servicios/live-esports`
+- `/es/proyectos`
+- `/es/proyectos/[slug]`
+- `/es/nosotros`
+- `/es/contacto`
+
+### Inglés
+
+- `/en`
+- `/en/services`
+- `/en/services/corporate-gaming`
+- `/en/services/schools`
+- `/en/services/game-building`
+- `/en/services/live-esports`
+- `/en/projects`
+- `/en/projects/[slug]`
+- `/en/about`
+- `/en/contact`
+
+Los slugs de proyectos podrán traducirse si existe una correspondencia estable entre ambos idiomas.
+
+Añadir las páginas legales necesarias de acuerdo con el tratamiento de datos y jurisdicciones aplicables.
+
+---
+
+# 6. CONTENIDO COMPLETO DEL HOME
+
+## HERO / INICIO
+
+### Texto superior
+
+GAMING · PEOPLE · BRANDS · RESULTS
+
+### Titular principal
+
+HACEMOS  
+QUE LAS MARCAS  
+SEAN PARTE  
+DEL JUEGO.
+
+Utilizar blanco y degradado violeta/azul para destacar la segunda parte del titular.
+
+### Descripción
+
+Conectamos marcas, instituciones y comunidades mediante experiencias gaming, competencias, tecnología y entretenimiento.
+
+### CTA
+
+CONOCE NUESTROS SERVICIOS →
+
+### Elementos visuales
+
+- Fotografía principal de jugador competitivo.
+- Isotipo BG tridimensional superpuesto en una posición visual protagonista.
+- Fondo oscuro.
+- Iluminación controlada.
+- Indicador de scroll.
+- Navegación vertical derecha.
+
+### Interacciones
+
+El isotipo debe responder sutilmente a la posición del mouse.
+
+Implementar rotación limitada y suavizada para que el movimiento se perciba premium, no como un juguete.
+
+Durante el scroll, el modelo podrá cambiar de orientación, escala y posición.
+
+La fotografía de fondo tendrá movimiento parallax suave, creando sensación de profundidad y continuidad hacia la sección siguiente.
+
+El scroll debe controlar una secuencia visual, no limitarse a activar animaciones aisladas.
+
+### Correcciones definitivas solicitadas
+
+- Eliminar la imagen secundaria del escenario ubicada debajo del hero.
+- Eliminar el bloque decorativo inferior que decía Gaming / People / Brands / Results.
+- Conservar el 3D principal, el titular, la fotografía de gaming y el CTA.
+- Evitar añadir otros elementos para ocupar los espacios eliminados.
+- Hacer que la imagen principal participe del desplazamiento scroll-based.
+- Mantener la composición limpia de la referencia original.
+
+En móviles, implementar una versión táctil o animación discreta con degradación progresiva de efectos.
+
+---
+
+# 7. SERVICIOS — CONTENIDO COMERCIAL
+
+## Cabecera de sección
+
+**Título:**
+
+IDEAS, COMUNIDAD  
+Y EXPERIENCIAS  
+QUE CONECTAN.
+
+**Descripción:**
+
+Integramos estrategia, producción y comunidad para crear experiencias de gaming que generan impacto real entre jugadores, audiencias y marcas.
+
+**CTA:**
+
+VER TODOS LOS SERVICIOS →
+
+Diseñar cuatro bloques visuales, preferentemente mediante una composición editorial 2 × 2 para escritorio, compatible con la referencia visual.
+
+Cada servicio tendrá un enlace hacia su página interna.
+
+## SERVICIO A — CORPORATE GAMING
+
+**Título comercial:**
+
+GAMING QUE CONECTA EQUIPOS Y MARCAS.
+
+**Descripción:**
+
+Diseñamos experiencias gaming para empresas, instituciones y marcas que buscan conectar con sus públicos mediante entretenimiento, colaboración y tecnología.
+
+**Capacidades:**
+
+- Activaciones de marca.
+- Torneos corporativos.
+- Team building gaming.
+- Experiencias presenciales y digitales.
+
+**CTA:**
+
+EXPLORAR CORPORATE GAMING →
+
+**Imagen principal:** `marketing.jpg`
+
+### Página interna
+
+Debe explicar casos de uso, formatos de activación, metodología de producción, opciones de personalización y beneficios para empresas.
+
+No prometer resultados comerciales específicos sin evidencia.
+
+## SERVICIO B — COLEGIOS
+
+**Título comercial:**
+
+TU ECOSISTEMA GAMING ESCOLAR.
+
+**Descripción exacta:**
+
+Para colegios e institutos: ligas, clubes de esports y experiencias que motivan a tus estudiantes y fortalecen tu propuesta educativa.
+
+**Capacidades:**
+
+- Ligas internas e interescolares.
+- Club de esports con entrenadores.
+- Talleres para docentes y familias.
+- Experiencias educativas en Roblox.
+
+**CTA exacto:**
+
+QUIERO UN ECOSISTEMA PARA MI COLEGIO →
+
+### Página interna
+
+Debe estar enfocada en autoridades escolares, directores y responsables de innovación educativa.
+
+Incluir:
+
+- Presentación del ecosistema.
+- Beneficios potenciales.
+- Programas y formatos.
+- Metodología de implementación.
+- Supervisión, bienestar digital y participación responsable.
+- Participación de docentes y familias.
+- Solicitud de propuesta.
+
+No afirmar beneficios pedagógicos medidos sin documentación.
+
+Al tratarse de servicios que pueden involucrar menores de edad, incorporar consideraciones de privacidad, autorización y seguridad apropiadas para entornos educativos.
+
+## SERVICIO C — GAME BUILDING
+
+**Título comercial:**
+
+CREAMOS EXPERIENCIAS QUE SE JUEGAN.
+
+**Descripción:**
+
+Desarrollamos experiencias interactivas y mundos digitales para marcas y comunidades.
+
+**Capacidades:**
+
+- Desarrollo de experiencias en Roblox.
+- Experiencias en Minecraft.
+- Minijuegos personalizados.
+- Activaciones gamificadas.
+
+**CTA:**
+
+EXPLORAR GAME BUILDING →
+
+### Página interna
+
+Mostrar posibles tipos de experiencias, el proceso de diseño, desarrollo, pruebas y publicación, y ejemplos verificables de proyectos.
+
+No insinuar afiliación oficial con Roblox, Minecraft ni sus titulares de derechos.
+
+## SERVICIO D — LIVE ESPORTS
+
+**Título comercial:**
+
+DE LA COMPETENCIA A LA EXPERIENCIA.
+
+**Descripción:**
+
+Diseñamos, organizamos y producimos competencias gaming para comunidades, marcas e instituciones.
+
+**Capacidades:**
+
+- Organización de torneos.
+- Producción de eventos esports.
+- Streaming y broadcast.
+- Gestión de comunidades competitivas.
+
+**CTA:**
+
+EXPLORAR LIVE ESPORTS →
+
+### Página interna
+
+Mostrar:
+
+- Formatos de torneos.
+- Producción presencial.
+- Producción online.
+- Broadcast y streaming.
+- Gestión de participantes.
+- Operación y coordinación.
+- Resultados verificables.
+
+---
+
+# 8. CONFÍAN EN NOSOTROS
+
+**Título:**
+
+CONFÍAN EN NOSOTROS.
+
+**Texto:**
+
+Trabajamos con marcas, instituciones y comunidades que apuestan por el gaming como una plataforma real de conexión.
+
+## Tratamiento visual
+
+Conservar exclusivamente una barra de logos horizontal, compacta y minimalista.
+
+Los logos podrán desplazarse en forma horizontal mediante una interacción suave, accesible y pausada cuando el usuario lo requiera.
+
+### Corrección solicitada
+
+Eliminar la imagen grande del evento que anteriormente aparecía debajo de la barra de logos.
+
+Eliminar también el bloque de texto promocional adicional asociado a esa imagen.
+
+No utilizar esta sección como una segunda galería de eventos.
+
+Debe mantenerse como una franja elegante de confianza comercial.
+
+### Gestión de marcas
+
+El diseño referencial mostraba marcas como UTP, Claro, Samsung, Redragon, Minecraft, Roblox y TikTok.
+
+Estas marcas no deben considerarse clientes confirmados solo porque aparecieron en el mockup.
+
+Solicitar validación de la relación comercial y autorización correspondiente antes de incorporar cualquier logotipo a la versión pública.
+
+Hasta entonces, permitir una lista configurable y ocultar marcas no aprobadas.
+
+---
+
+# 9. PROYECTOS — PORTAFOLIO
+
+## Cabecera
+
+**Título:**
+
+IDEAS REALES,  
+COMUNIDADES REALES.
+
+**Descripción:**
+
+Explora nuestras experiencias, torneos y activaciones gaming.
+
+**CTA:**
+
+VER TODOS LOS PROYECTOS →
+
+## Filtros
+
+- Todos.
+- Torneos.
+- Activaciones.
+- Game Building.
+- Corporate Gaming.
+- Educación.
+
+## Galería
+
+La imagen referencial utiliza una composición fotográfica asimétrica.
+
+Conservar este criterio.
+
+Utilizar las fotografías originales, con encuadres variados y jerarquía visual.
+
+Cada elemento de proyecto debe tener:
+
+- Imagen.
+- Nombre real del proyecto.
+- Categoría.
+- Breve descripción.
+- Enlace a detalle.
+
+No inventar proyectos adicionales para completar la cuadrícula.
+
+Cuando falten casos reales documentados, adaptar el layout al inventario disponible.
+
+## Página individual de proyecto
+
+Cada caso debe contener:
+
+1. Hero fotográfico.
+2. Nombre oficial.
+3. Cliente o institución, si corresponde.
+4. Contexto y objetivo del proyecto.
+5. Rol de BeGamer.
+6. Servicios aplicados.
+7. Desarrollo o ejecución.
+8. Galería de fotografías y videos.
+9. Resultados cuantitativos verificados, si existen.
+10. CTA comercial para desarrollar un proyecto similar.
+11. Navegación al siguiente proyecto.
+
+Los proyectos deben almacenarse en una estructura de contenido reutilizable, de modo que agregar un nuevo caso no exija modificar manualmente componentes de presentación.
+
+---
+
+# 10. NOSOTROS
+
+## Título
+
+UNA AGENCIA  
+NACIDA EN LA  
+COMUNIDAD.
+
+## Descripción
+
+Conectamos el mundo gaming con marcas, instituciones y audiencias mediante experiencias reales, dentro y fuera de la pantalla.
+
+## Ejes de BeGamer
+
+**COMUNIDAD**
+
+Personas que comparten una misma pasión.
+
+**COMPETENCIA**
+
+Experiencias que impulsan talento y participación.
+
+**EXPERIENCIA**
+
+Soluciones que conectan marcas y audiencias.
+
+## CTA
+
+CONOCE MÁS SOBRE NOSOTROS →
+
+## Diseño
+
+Utilizar una fotografía documental auténtica.
+
+Mantener los tres conceptos en una estructura horizontal limpia con iconos discretos.
+
+Evitar elementos 3D adicionales que compitan con la fotografía.
+
+## Página interna
+
+Desarrollar un relato corporativo conciso, sin inventar antecedentes ni trayectoria.
+
+Presentar:
+
+- Filosofía.
+- Enfoque creativo.
+- Especialización.
+- Servicios.
+- Metodología.
+- Experiencias reales.
+- CTA comercial.
+
+No publicar perfiles ni datos personales del equipo sin autorización.
+
+---
+
+# 11. CONTACTO
+
+## Título
+
+HABLEMOS  
+DE TU PRÓXIMO  
+PROYECTO.
+
+## Descripción
+
+Cuéntanos tu idea, tu marca o tu comunidad. Estamos listos para crear algo increíble juntos.
+
+## Formulario
+
+Campos:
+
+- Nombre.
+- Correo electrónico.
+- Empresa o institución.
+- Tipo de proyecto.
+- Mensaje.
+- Aceptación de política de privacidad.
+
+### Opciones de tipo de proyecto
+
+- Corporate Gaming.
+- Colegios / Gaming escolar.
+- Game Building.
+- Live Esports.
+- Otro.
+
+### CTA
+
+ENVIAR MENSAJE →
+
+## Comportamiento funcional
+
+- Validación accesible de campos.
+- Validación también en el servidor.
+- Estados de carga.
+- Mensaje de envío exitoso.
+- Manejo de errores.
+- Protección anti-spam.
+- Registro seguro o entrega fiable de solicitudes.
+- Nunca exponer contraseñas, claves SMTP o credenciales en el navegador.
+
+Añadir política de privacidad y tratamiento de datos personales.
+
+No insertar correos, teléfonos o perfiles sociales que no hayan sido proporcionados y confirmados.
+
+## Footer
+
+Incluir:
+
+- Logo blanco original.
+- Enlaces principales.
+- Selector de idioma cuando sea útil.
+- Redes sociales verificadas.
+- Copyright con año dinámico.
+- Política de privacidad.
+- Términos y condiciones, si corresponde.
+
+No agregar un elemento 3D decorativo grande si deteriora la limpieza visual.
+
+---
+
+# 12. SISTEMA BILINGÜE
+
+El sitio tendrá traducciones completas y naturales.
+
+No se aceptará una implementación que únicamente cambie los textos del menú.
+
+Traducir también:
+
+- Títulos.
+- Descripciones.
+- Servicios.
+- Formularios.
+- Mensajes de validación.
+- Mensajes de confirmación.
+- Contenido de proyectos.
+- Metadatos SEO.
+- Textos alternativos de imágenes cuando corresponda.
+- Elementos de accesibilidad.
+- Páginas legales, según el alcance aprobado.
+
+## Diccionario base de navegación
+
+| Español | Inglés |
+|---|---|
+| Inicio | Home |
+| Servicios | Services |
+| Proyectos | Projects |
+| Nosotros | About Us |
+| Contacto | Contact |
+| Confían en nosotros | Trusted By |
+| Hablemos | Let's Talk |
+| Conoce nuestros servicios | Explore Our Services |
+| Ver todos los proyectos | View All Projects |
+| Enviar mensaje | Send Message |
+
+## Traducción base de los principales titulares
+
+**Home ES:**  
+Hacemos que las marcas sean parte del juego.
+
+**Home EN:**  
+We make brands part of the game.
+
+**Servicios ES:**  
+Ideas, comunidad y experiencias que conectan.
+
+**Servicios EN:**  
+Ideas, communities and experiences that connect.
+
+**Corporate Gaming ES:**  
+Gaming que conecta equipos y marcas.
+
+**Corporate Gaming EN:**  
+Gaming that connects teams and brands.
+
+**Colegios ES:**  
+Tu ecosistema gaming escolar.
+
+**Colegios EN:**  
+Your school's gaming ecosystem.
+
+**Colegios — descripción EN:**  
+For schools and educational institutes: leagues, esports clubs and experiences that engage students and strengthen your educational offering.
+
+**Colegios — capacidades EN:**
+
+- Internal and interschool leagues.
+- Esports clubs with coaches.
+- Workshops for teachers and families.
+- Educational Roblox experiences.
+
+**Game Building ES:**  
+Creamos experiencias que se juegan.
+
+**Game Building EN:**  
+We build experiences made to be played.
+
+**Live Esports ES:**  
+De la competencia a la experiencia.
+
+**Live Esports EN:**  
+From competition to experience.
+
+**Proyectos ES:**  
+Ideas reales, comunidades reales.
+
+**Proyectos EN:**  
+Real ideas, real communities.
+
+**Nosotros ES:**  
+Una agencia nacida en la comunidad.
+
+**Nosotros EN:**  
+An agency born from the community.
+
+**Contacto ES:**  
+Hablemos de tu próximo proyecto.
+
+**Contacto EN:**  
+Let's talk about your next project.
+
+Completar las traducciones restantes mediante un diccionario centralizado y revisarlas para que mantengan el sentido comercial.
+
+No usar traducción automática en tiempo real como único mecanismo del sitio.
+
+---
+
+# 13. ARQUITECTURA TÉCNICA
+
+La web deberá ser compatible con el hosting cPanel disponible y mantenerse mediante Git.
+
+## Contexto de infraestructura previa
+
+Anteriormente se trabajó en una web denominada Vialma Travel con:
+
+- Desarrollo basado en React.
+- Repositorio GitHub.
+- Hosting Namecheap con cPanel.
+- Gestión de dominio y DNS.
+- Acceso SSH/Git para despliegue.
+- Administración de archivos del hosting.
+
+Este flujo sirve como referencia operativa.
+
+No asumir que la cuenta o configuración de BeGamer tiene exactamente las mismas capacidades. Verificar el entorno.
+
+No reutilizar credenciales, claves SSH ni archivos privados de Vialma Travel.
+
+## Evaluación tecnológica obligatoria
+
+Comparar:
+
+**Opción A: Astro + React Islands**
+
+- Páginas estáticas orientadas a SEO.
+- Componentes React para la experiencia interactiva.
+- Generación estática.
+- Menor dependencia de JavaScript en páginas informativas.
+
+**Opción B: React + Vite con prerenderizado**
+
+- Arquitectura cercana al proyecto anterior.
+- Componentes reutilizables.
+- Generación de HTML por ruta mediante estrategia SSG.
+- Integración de componentes 3D y animaciones.
+
+**Opción C: Next.js con exportación estática**
+
+- Rutas de páginas y contenido preconstruido.
+- Evaluación de restricciones de exportación.
+- Compatibilidad con hosting estático.
+
+No elegir una arquitectura SSR con servidor Node permanente sin comprobar antes que cPanel soporte de manera adecuada ese despliegue.
+
+### Stack interactivo a evaluar
+
+- React.
+- TypeScript.
+- Three.js.
+- React Three Fiber.
+- GSAP.
+- ScrollTrigger.
+- CSS Modules, Tailwind CSS o CSS organizado mediante tokens.
+- Sistema i18n compatible con páginas estáticas.
+- Gestión de contenido mediante archivos estructurados o CMS desacoplado, si se justifica.
+
+Justificar las dependencias seleccionadas.
+
+Evitar instalar bibliotecas redundantes.
+
+Priorizar simplicidad, rendimiento y mantenibilidad.
+
+---
+
+# 14. EXPERIENCIA SCROLL-BASED Y WEBGL
+
+Producir una especificación técnica detallada de la interacción.
+
+## Logo 3D
+
+- Geometría fiel al símbolo BG.
+- Escala adaptable.
+- Rotación controlada por mouse.
+- Interpolación suave.
+- Iluminación violeta/cian.
+- Calidad visual premium.
+- Sin movimiento excesivo.
+- Carga progresiva.
+- Alternativa 2D si WebGL no está disponible.
+
+## Narrativa de scroll
+
+La experiencia deberá conectar visualmente:
+
+Home → Servicios → Confían en nosotros → Proyectos → Nosotros → Contacto.
+
+Definir transiciones concretas:
+
+- Parallax suave del hero.
+- Transformación espacial del logo BG.
+- Entradas tipográficas discretas.
+- Aparición de imágenes según scroll.
+- Navegación vertical con estado activo.
+- Filtrado de proyectos.
+- Carrusel de logos.
+- Transiciones a páginas de detalle.
+
+### Requisitos de interacción
+
+- Scroll nativo como base.
+- Evitar bloquear el desplazamiento innecesariamente.
+- Respetar `prefers-reduced-motion`.
+- Mantener acceso con teclado.
+- No depender del hover en dispositivos táctiles.
+- Prevenir saltos de layout.
+- Desactivar efectos costosos en dispositivos de bajo rendimiento.
+
+Definir qué interacciones son indispensables para MVP y cuáles pueden implementarse después.
+
+---
+
+# 15. ESTRATEGIA SEO COMPLETA
+
+Desarrollar una estrategia SEO realista orientada a captar clientes comerciales.
+
+## SEO técnico
+
+Incluir:
+
+- HTML semántico.
+- HTML prerenderizado por cada página indexable.
+- Titles únicos.
+- Meta descriptions únicas.
+- Canonical URLs.
+- Hreflang español/inglés.
+- Sitemap XML.
+- Robots.txt.
+- URLs descriptivas.
+- Open Graph.
+- Twitter/X Cards.
+- JSON-LD apropiado.
+- Enlaces internos.
+- Breadcrumbs en páginas internas.
+- Estados HTTP correctos.
+- Página 404.
+- Redirecciones permanentes donde correspondan.
+- Control de páginas no indexables.
+- Imágenes con alt descriptivo.
+
+No asumir que una SPA renderizada solamente en el navegador ofrece la misma facilidad de rastreo que una web prerenderizada.
+
+## SEO multilingüe
+
+- `/es` y `/en` indexables por separado.
+- Etiquetas `hreflang` recíprocas.
+- Canonical propio para cada página e idioma.
+- Sitemap con las versiones idiomáticas.
+- Enlaces directos entre versiones equivalentes.
+- No depender exclusivamente del idioma del navegador.
+- No forzar redirecciones geográficas basadas en IP.
+
+## Investigación de palabras clave
+
+Proponer clusters de intención de búsqueda como:
+
+- Agencia gaming marketing.
+- Agencia esports Perú.
+- Activaciones gaming para marcas.
+- Torneos esports para empresas.
+- Gaming corporativo.
+- Team building gaming.
+- Clubes esports escolares.
+- Ligas esports escolares.
+- Experiencias Roblox para marcas.
+- Desarrollo de juegos Roblox.
+- Producción de eventos esports.
+- Esports event production.
+- Gaming marketing agency.
+- Branded Roblox experiences.
+
+Clasificar por:
+
+- Intención comercial.
+- Intención informativa.
+- Audiencia.
+- Servicio.
+- Idioma.
+- Página de destino sugerida.
+
+No inventar volúmenes de búsqueda, posiciones o competencia SEO. Si se dispone de herramientas de investigación, verificar los datos.
+
+## SEO local y comercial
+
+Evaluar el enfoque de Lima, Perú y Latinoamérica.
+
+No publicar direcciones físicas falsas.
+
+Proponer mejoras para resultados locales solo cuando se disponga de información empresarial verificable.
+
+## Estrategia de contenidos
+
+Proponer páginas y artículos futuros que respondan a búsquedas de potenciales clientes:
+
+- Cómo organizar un torneo esports para una empresa.
+- Activaciones gaming para marcas.
+- Beneficios y consideraciones de un club esports escolar.
+- Cómo desarrollar una experiencia de marca en Roblox.
+- Producción de eventos gaming presenciales.
+- Estrategias de marketing para comunidades gamer.
+
+No generar artículos genéricos en masa.
+
+Priorizar contenido con experiencias reales, fotografías, ejemplos y conocimientos propios.
+
+## Métricas SEO
+
+Definir KPIs para:
+
+- Impresiones orgánicas.
+- Clics orgánicos.
+- Páginas indexadas.
+- Consultas relevantes.
+- Conversiones orgánicas.
+- Leads por servicio.
+- Rendimiento técnico.
+
+Incluir una propuesta de implementación para Google Search Console y Google Analytics 4, respetando las normas de privacidad y consentimiento aplicables.
+
+---
+
+# 16. SEGURIDAD WEB
+
+Diseñar un modelo de seguridad apropiado para un sitio corporativo con formularios.
+
+## Requisitos mínimos
+
+- HTTPS.
+- Certificado SSL válido.
+- Redirección HTTP → HTTPS.
+- Cabeceras de seguridad.
+- Content Security Policy compatible con las dependencias utilizadas.
+- Protección contra XSS.
+- Protección CSRF cuando aplique.
+- Validación y saneamiento de entradas.
+- Protección de formularios contra bots y abuso.
+- Rate limiting del lado servidor.
+- Configuración CORS restrictiva cuando corresponda.
+- Dependencias mantenidas y auditadas.
+- Secretos fuera del repositorio.
+- Acceso mínimo necesario a servicios externos.
+- Políticas de privacidad.
+- Gestión segura de registros y solicitudes.
+
+## Formularios
+
+Si el frontend es estático y utiliza cPanel, evaluar un backend seguro para formularios, compatible con el hosting disponible.
+
+Puede ser un endpoint PHP bien implementado o un servicio externo reputado, según los requisitos.
+
+No almacenar claves SMTP en el frontend.
+
+No enviar formularios mediante un mecanismo que permita a terceros abusar de las credenciales.
+
+No afirmar que un sistema es seguro sin pruebas.
+
+## Protección de Git
+
+- Nunca subir contraseñas.
+- Nunca subir claves privadas SSH.
+- Nunca subir archivos `.env` reales.
+- Crear `.env.example`.
+- Configurar `.gitignore`.
+- Limitar permisos de despliegue.
+- Escanear secretos.
+- Evaluar dependencias vulnerables.
+- Usar autenticación multifactor para cuentas administrativas cuando esté disponible.
+
+El resultado deberá incluir una checklist de seguridad previa al lanzamiento.
+
+---
+
+# 17. RENDIMIENTO Y OPTIMIZACIÓN
+
+Diseñar la web pensando en Core Web Vitals y usuarios móviles.
+
+## Objetivos orientativos
+
+- LCP: 2.5 segundos o menos.
+- INP: 200 ms o menos.
+- CLS: 0.1 o menos.
+
+Utilizar estos valores como referencias de buena experiencia, no como resultados garantizados.
+
+## Requisitos
+
+- Imágenes WebP/AVIF cuando sea adecuado.
+- Versiones responsive.
+- Lazy loading.
+- Preload selectivo de recursos críticos.
+- Optimización del modelo 3D.
+- Control de texturas WebGL.
+- Code splitting.
+- Reducción de JavaScript no necesario.
+- Caché eficiente.
+- Carga diferida de galerías.
+- Evitar animaciones que produzcan layout shifts.
+- Optimizar fuentes.
+- Manejar correctamente los recursos de la primera pantalla.
+
+Evaluar el coste del modelo 3D y establecer fallbacks medibles.
+
+La experiencia visual no debe perjudicar el posicionamiento ni el rendimiento móvil.
+
+---
+
+# 18. ACCESIBILIDAD
+
+Tomar WCAG 2.2 AA como referencia.
+
+Incluir:
+
+- Navegación por teclado.
+- Foco visible.
+- Contraste suficiente.
+- Enlaces con nombres accesibles.
+- Formularios etiquetados.
+- Mensajes de error comprensibles.
+- Jerarquía correcta de headings.
+- Alternativas para efectos 3D.
+- Soporte de movimiento reducido.
+- Responsive design.
+- Imágenes con textos alternativos relevantes.
+- Idioma de documento definido mediante `lang`.
+- Correcto manejo de modales y menús.
+
+Evitar controles que dependan exclusivamente del color o del movimiento del mouse.
+
+---
+
+# 19. GIT, GITHUB Y CPANEL
+
+La aplicación debe quedar preparada para versionarse y desplegarse con Git.
+
+## Repositorio
+
+Crear una estructura organizada que permita:
+
+- Desarrollo local.
+- Integración de cambios.
+- Revisión de código.
+- Pruebas.
+- Build de producción.
+- Despliegue.
+- Restauración de versiones anteriores.
+
+### Estrategia sugerida
+
+- Rama `main` para producción.
+- Ramas de características para desarrollo.
+- Pull requests cuando corresponda.
+- Commits descriptivos.
+- Releases etiquetadas.
+- Registro de cambios.
+
+## Integración GitHub → cPanel
+
+Investigar y comparar:
+
+**Modelo 1:** build local y despliegue de archivos compilados.
+
+**Modelo 2:** GitHub Actions que genera los archivos de producción y los transfiere de forma segura.
+
+**Modelo 3:** repositorio Git gestionado por cPanel, utilizando las herramientas nativas de Git Version Control y `.cpanel.yml`.
+
+Seleccionar la estrategia más fiable para el hosting disponible.
+
+## Verificaciones previas del hosting
+
+- Acceso a cPanel.
+- Versión y capacidades de PHP.
+- Disponibilidad de SSH.
+- Disponibilidad de Git Version Control.
+- Disponibilidad de Node.js, si resulta necesario.
+- Directorio raíz del dominio.
+- Versión de Apache y reglas disponibles.
+- HTTPS.
+- Cron, si fuera necesario.
+- Límites de almacenamiento.
+- Límites de CPU y memoria.
+- DNS.
+- Capacidad de staging.
+
+## Requisitos de despliegue
+
+- Builds reproducibles.
+- No subir carpetas innecesarias.
+- No publicar el directorio `.git`.
+- Separar repositorio y directorio público.
+- Crear un entorno de pruebas.
+- Evitar sobreescribir otras webs alojadas en la misma cuenta.
+- Definir rollback.
+- Verificar rutas estáticas.
+- Verificar traducciones.
+- Verificar formularios.
+- Verificar certificados y redirecciones.
+
+### Consideración importante
+
+El proyecto Vialma Travel sirve como referencia del flujo de despliegue, pero BeGamer debe mantenerse como proyecto independiente.
+
+No mezclar repositorios, directorios públicos, claves SSH ni archivos de configuración de ambos sitios.
+
+---
+
+# 20. ESTRUCTURA DEL PROYECTO
+
+Proponer una estructura profesional, modular y escalable.
+
+Como mínimo, definir áreas equivalentes a:
+
+- `src/components` — componentes compartidos.
+- `src/layouts` — layouts.
+- `src/pages` — páginas y rutas.
+- `src/sections` — secciones del Home.
+- `src/content` — servicios y proyectos.
+- `src/i18n` — textos ES/EN.
+- `src/styles` — sistema visual y tokens.
+- `src/lib` — utilidades.
+- `src/hooks` — comportamiento compartido.
+- `src/three` — escena y componentes 3D.
+- `public/assets` — imágenes, íconos y recursos estáticos.
+- `tests` — pruebas.
+- `docs` — documentación técnica y operativa.
+
+Adaptar los nombres y ubicaciones a la tecnología finalmente seleccionada.
+
+## Componentes sugeridos
+
+- SiteHeader.
+- LanguageSwitcher.
+- ScrollProgressNavigation.
+- HeroSection.
+- InteractiveBGLogo.
+- ServicesSection.
+- ServiceCard.
+- TrustedByCarousel.
+- ProjectsGallery.
+- ProjectFilters.
+- ProjectCard.
+- AboutSection.
+- ContactSection.
+- ContactForm.
+- SiteFooter.
+- ServiceDetailPage.
+- ProjectDetailPage.
+- ImageLightbox.
+- ProjectBriefModal.
+
+Evitar componentes gigantes que mezclen contenido, animaciones, navegación y lógica de formularios.
+
+---
+
+# 21. CONTENIDO Y MANTENIBILIDAD
+
+Los textos no deben estar dispersos por todo el código.
+
+Desarrollar una estructura de datos o sistema de contenido que permita editar fácilmente:
+
+- Servicios.
+- Proyectos.
+- Fotografías.
+- Clientes autorizados.
+- Traducciones.
+- SEO.
+- Enlaces.
+- CTA.
+- Datos de contacto.
+
+Evaluar si para el MVP basta con contenido estructurado en archivos o si se justifica un CMS.
+
+No incorporar un panel administrativo complejo sin demostrar su necesidad.
+
+La prioridad es una web rápida, segura y sencilla de mantener.
+
+---
+
+# 22. EXPERIENCIA RESPONSIVE
+
+Definir al menos tres experiencias:
+
+**Desktop**
+
+- Hero visual amplio.
+- Logo BG 3D interactivo.
+- Navegación vertical.
+- Galerías editoriales.
+- Header horizontal completo.
+
+**Tablet**
+
+- Ajuste de composición.
+- Navegación simplificada.
+- Galería responsive.
+- Menor intensidad de efectos.
+
+**Mobile**
+
+- Header compacto.
+- Menú móvil.
+- Selector ES/EN.
+- Scroll nativo.
+- CTA accesibles.
+- Fotografías bien encuadradas.
+- Componentes 3D simplificados.
+- Formularios adaptados.
+- Sin desplazamiento horizontal accidental.
+
+No limitarse a reducir proporcionalmente el diseño de escritorio.
+
+---
+
+# 23. ANALÍTICA Y CONVERSIÓN
+
+Crear un plan de medición para conocer el rendimiento comercial del sitio.
+
+## Eventos recomendados
+
+- `view_service`
+- `click_service_cta`
+- `view_project`
+- `click_contact`
+- `start_contact_form`
+- `submit_contact_form`
+- `contact_form_success`
+- `change_language`
+- `click_social_link`
+
+Definir qué parámetros necesita cada evento y cómo evitar enviar información personal innecesaria a plataformas analíticas.
+
+## KPIs
+
+- Leads recibidos.
+- Leads por servicio.
+- Conversión de formularios.
+- Origen del tráfico.
+- Proyectos más consultados.
+- Servicios más visitados.
+- Rendimiento SEO por idioma.
+
+Separar los objetivos de marketing de los indicadores técnicos.
+
+---
+
+# 24. PLAN DE PRUEBAS Y CONTROL DE CALIDAD
+
+Crear una matriz de QA que cubra:
+
+## Funcionalidad
+
+- Header.
+- Enlaces.
+- Menús.
+- Idiomas.
+- Filtros.
+- Formularios.
+- Galerías.
+- Modales.
+- Scroll navigation.
+- Navegación de proyectos.
+
+## Visual
+
+- Fidelidad a la imagen maestra.
+- Tipografía.
+- Márgenes.
+- Degradados.
+- Responsividad.
+- Recorte fotográfico.
+- Consistencia entre páginas.
+- Calidad del modelo 3D.
+
+## Técnica
+
+- Builds.
+- Rutas.
+- Metadatos.
+- SEO.
+- Seguridad.
+- Rendimiento.
+- Accesibilidad.
+- Despliegue.
+- Errores en consola.
+- Navegación directa a rutas internas.
+- Funcionamiento sin WebGL.
+- Comportamiento con JavaScript limitado.
+
+Proponer pruebas automatizadas y manuales.
+
+Especificar criterios de aceptación verificables.
+
+---
+
+# 25. FASES DE EJECUCIÓN
+
+Diseñar un roadmap detallado, considerando dependencias y riesgos.
+
+Utilizar inicialmente estas fases, ajustándolas si el análisis técnico lo justifica:
+
+### Fase 1 — Descubrimiento y auditoría
+
+- Auditar referencias.
+- Validar assets.
+- Auditar cPanel.
+- Confirmar arquitectura.
+- Inventariar información faltante.
+
+### Fase 2 — Design System
+
+- Tokens.
+- Tipografía.
+- Layout.
+- Responsive.
+- Componentes base.
+- Header y navegación.
+
+### Fase 3 — MVP visual
+
+- Home.
+- Servicios.
+- Barra de confianza.
+- Proyectos.
+- Nosotros.
+- Contacto.
+
+### Fase 4 — Experiencia interactiva
+
+- Logo BG 3D.
+- ScrollTrigger.
+- Parallax.
+- Animaciones.
+- Microinteracciones.
+
+### Fase 5 — Páginas internas y contenido
+
+- Servicios individuales.
+- Portafolio.
+- Casos de éxito.
+- Páginas legales necesarias.
+- Traducciones.
+
+### Fase 6 — SEO, seguridad y rendimiento
+
+- Metadatos.
+- Indexación.
+- Web Vitals.
+- Hardening.
+- Auditorías.
+
+### Fase 7 — GitHub y producción
+
+- Repositorio.
+- Pipeline.
+- Staging.
+- cPanel.
+- Dominio.
+- SSL.
+- Deployment.
+- Rollback.
+
+### Fase 8 — QA y lanzamiento
+
+- Pruebas funcionales.
+- Pruebas responsive.
+- Validación de contenidos.
+- Verificación SEO.
+- Publicación.
+- Monitoreo inicial.
+
+Para cada fase entregar:
+
+- Objetivo.
+- Tareas.
+- Dependencias.
+- Entregables.
+- Riesgos.
+- Prioridad.
+- Criterios de aceptación.
+- Tiempo estimado razonado, si se puede estimar con la información disponible.
+
+---
+
+# 26. FORMATO DE TU RESPUESTA
+
+Tu primera respuesta debe presentar el plan estratégico en el siguiente orden:
+
+1. Resumen ejecutivo del proyecto.
+2. Diagnóstico de la referencia visual.
+3. Objetivos comerciales y públicos.
+4. Arquitectura de información.
+5. Sitemap completo ES/EN.
+6. Inventario de contenidos y recursos.
+7. Auditoría de información faltante.
+8. Comparativa de stacks tecnológicos.
+9. Arquitectura técnica recomendada.
+10. Estrategia de animaciones y 3D.
+11. Estrategia SEO completa.
+12. Estrategia de seguridad.
+13. Estrategia de rendimiento.
+14. Accesibilidad y responsive.
+15. Modelo de contenido y mantenimiento.
+16. Arquitectura Git/GitHub.
+17. Estrategia de despliegue en cPanel.
+18. Analítica y captación de leads.
+19. Roadmap de desarrollo.
+20. Matriz de QA y criterios de aceptación.
+21. Riesgos y mitigaciones.
+22. **PROMPT TÉCNICO FINAL PARA IMPLEMENTAR LA WEB.**
+
+## Requisitos del prompt técnico final
+
+Debe ser suficientemente concreto para que un agente de programación pueda utilizarlo como instrucción principal.
+
+Debe incluir:
+
+- Contexto del proyecto.
+- Descripción visual.
+- Archivos de referencia.
+- Diseño y estructura.
+- Arquitectura elegida.
+- Especificaciones de componentes.
+- Rutas.
+- Datos y traducciones.
+- Animaciones.
+- Formulario.
+- SEO.
+- Seguridad.
+- Rendimiento.
+- Configuración de Git.
+- Despliegue en cPanel.
+- Pruebas.
+- Definición de terminado.
+
+No debe limitarse a pedir que se construya una página bonita.
+
+Debe dirigir una implementación funcional y profesional.
+
+## Criterio final de éxito
+
+El proyecto estará listo cuando:
+
+- La web reproduzca fielmente la dirección visual aprobada.
+- El logo 3D funcione de manera fluida y controlada.
+- La narrativa scroll-based esté implementada.
+- Las seis secciones del Home estén completas.
+- Los cuatro servicios tengan sus páginas.
+- El portafolio sea navegable.
+- Español e inglés funcionen correctamente.
+- Los formularios puedan enviar solicitudes de forma segura.
+- La arquitectura sea compatible con el hosting.
+- El SEO técnico esté implementado.
+- Los recursos estén optimizados.
+- La web funcione correctamente en escritorio y móvil.
+- El repositorio esté preparado para GitHub.
+- Exista un procedimiento documentado de despliegue y rollback.
+- No existan credenciales expuestas.
+- Se hayan realizado las pruebas correspondientes.
+
+**PRINCIPIO RECTOR:** La web debe ser visualmente innovadora, pero técnicamente sencilla de mantener, segura, rápida y diseñada para convertir visitantes en oportunidades comerciales.
+
+Construye un sitio a la altura de una agencia internacional sin sacrificar funcionalidad, rendimiento ni fidelidad a la referencia original.

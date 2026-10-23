@@ -1,0 +1,5 @@
+import fs from 'node:fs';import fsp from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';import archiver from 'archiver';
+await fsp.access('dist/es/index.html');await fsp.mkdir('release',{recursive:true});
+const target='release/begamer-review-cpanel.zip';const output=fs.createWriteStream(target);const archive=archiver('zip',{zlib:{level:9}});
+const complete=new Promise((resolve,reject)=>{output.on('close',resolve);archive.on('error',reject)});archive.pipe(output);archive.directory('dist/','public/');archive.directory('server/private/','begamer-private/',entry=>entry.name.includes('config.php')||entry.name.includes('storage/')?false:entry);archive.file('docs/ESTADO-Y-DESPLIEGUE.md',{name:'LEEME-ANTES-DE-SUBIR.md'});await archive.finalize();await complete;
+const bytes=await fsp.readFile(target);await fsp.writeFile(target+'.sha256',crypto.createHash('sha256').update(bytes).digest('hex')+'  '+path.basename(target)+'\n');console.log(`Review package: ${target} (${bytes.length} bytes). Private server files must stay outside the document root.`);

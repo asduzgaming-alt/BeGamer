@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+release/
+test-results/
+playwright-report/
+server/private/config.php
+server/private/storage/
+server/private/vendor/
+tools/
+*.log

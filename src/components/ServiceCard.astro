@@ -1,0 +1,9 @@
+---
+import type {Service} from '../content/services'; import type {Locale} from '../i18n'; import {serviceRoute} from '../lib/routes';
+import ResponsiveImage from './ResponsiveImage.astro'; import Icon from './Icon.astro'; import Button from './Button.astro'; import SchoolArt from './SchoolArt.astro';
+const {service,locale}=Astro.props as {service:Service;locale:Locale}; const s=service[locale];
+---
+<article class="service-card">
+ <a class="service-image" href={serviceRoute(locale,service.id)} aria-label={s.name}>{service.image?<ResponsiveImage id={service.image} alt={s.title}/>:<SchoolArt locale={locale}/>}</a>
+ <div class="service-body"><div class="service-title"><span class="icon-box"><Icon name={service.icon} size={26}/></span><div><h3>{s.name}</h3><p>{s.title}</p></div></div><ul class="capabilities">{s.capabilities.map(c=><li>{c}</li>)}</ul><Button href={serviceRoute(locale,service.id)}>{s.cta}</Button></div>
+</article>

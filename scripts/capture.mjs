@@ -1,0 +1,4 @@
+import {chromium} from '@playwright/test';import fs from 'node:fs/promises';
+await fs.mkdir('docs/capturas',{recursive:true});const browser=await chromium.launch({channel:'msedge',headless:true});
+for(const width of [1440,390]){const page=await browser.newPage({viewport:{width,height:width===1440?1000:844},reducedMotion:'reduce'});await page.goto('http://127.0.0.1:4321/es/');await page.evaluate(()=>document.fonts.ready);await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));await page.evaluate(()=>Promise.all(Array.from(document.images).map(img=>img.decode().catch(()=>{}))));await page.screenshot({path:`docs/capturas/home-${width}.png`,fullPage:true});if(width===1440)await page.screenshot({path:'docs/capturas/hero-desktop.png'});await page.close();}
+await browser.close();

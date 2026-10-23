@@ -1,0 +1,16 @@
+---
+import {text,type Locale} from '../i18n'; import {services} from '../content/services'; import {route} from '../lib/routes'; import Icon from './Icon.astro';
+const {locale}=Astro.props as {locale:Locale}; const t=text[locale];
+---
+<form class="contact-form" action="/api/contact.php" method="post" data-contact-form data-messages={JSON.stringify(t.errors)} data-sending={t.sending} data-send={t.send} novalidate>
+ <div class="form-field"><label for="name">{t.name}</label><input id="name" name="name" autocomplete="name" required minlength="2" maxlength="100" placeholder={locale==='es'?'¿Cómo te llamas?':'What is your name?'}/><span class="field-error" id="name-error"></span></div>
+ <div class="form-field"><label for="email">{t.email}</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@company.com"/><span class="field-error" id="email-error"></span></div>
+ <div class="form-field"><label for="company">{t.company}</label><input id="company" name="company" autocomplete="organization" required minlength="2" maxlength="150" placeholder={locale==='es'?'El nombre de tu organización':'Your organization’s name'}/><span class="field-error" id="company-error"></span></div>
+ <div class="form-field"><label for="projectType">{t.projectType}</label><select id="projectType" name="projectType" required><option value="">{t.select}</option>{services.map(s=><option value={s.id}>{s[locale].name}</option>)}<option value="other">{t.other}</option></select><span class="field-error" id="projectType-error"></span></div>
+ <div class="form-field full-width"><label for="message">{t.message}</label><textarea id="message" name="message" rows="4" required minlength="20" maxlength="3000" placeholder={locale==='es'?'¿Qué te gustaría crear?':'What would you like to create?'}></textarea><span class="field-error" id="message-error"></span></div>
+ <div class="hp-field" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"/></div>
+ <div class="full-width"><label class="checkbox-label"><input type="checkbox" name="privacy" id="privacy" required/><span>{t.privacyAccept} <a href={route(locale,'privacy')}>{t.privacy}</a>.</span></label><span class="field-error" id="privacy-error"></span></div>
+ <button class="button button--solid form-submit" type="submit"><span>{t.send}</span><Icon name="arrow" size={20}/></button>
+ <p class="form-status full-width" role="status" tabindex="-1" aria-live="polite"></p>
+ <noscript><p>{locale==='es'?'Activa JavaScript para validar y enviar este formulario.':'Enable JavaScript to validate and submit this form.'}</p></noscript>
+</form>

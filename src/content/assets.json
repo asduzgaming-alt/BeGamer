@@ -1,0 +1,456 @@
+{
+  "hero": {
+    "source": "projects/ascension.png",
+    "width": 795,
+    "height": 725,
+    "sha256": "7a0d76529ee566519e9050b5df669da73a49c8107ba92ae5537d8d2d15a1ea63",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/hero-480.webp",
+        "bytes": 26098
+      },
+      {
+        "width": 795,
+        "path": "/assets/images/hero-795.webp",
+        "bytes": 46850
+      }
+    ]
+  },
+  "ascension": {
+    "source": "projects/ascension.png",
+    "width": 795,
+    "height": 725,
+    "sha256": "7a0d76529ee566519e9050b5df669da73a49c8107ba92ae5537d8d2d15a1ea63",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/ascension-480.webp",
+        "bytes": 26098
+      },
+      {
+        "width": 795,
+        "path": "/assets/images/ascension-795.webp",
+        "bytes": 46850
+      }
+    ]
+  },
+  "ecup": {
+    "source": "projects/ecup.jpg",
+    "width": 4000,
+    "height": 6000,
+    "sha256": "7c1266aedfd84f7051f5605f4973b69034aa0e1251230531ba1f0de68a7c0ff2",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/ecup-480.webp",
+        "bytes": 33384
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/ecup-800.webp",
+        "bytes": 64746
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/ecup-1200.webp",
+        "bytes": 119006
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/ecup-1600.webp",
+        "bytes": 213798
+      }
+    ]
+  },
+  "nubyx": {
+    "source": "projects/nubyx.png",
+    "width": 740,
+    "height": 890,
+    "sha256": "f8ac38d2be1ac107d96a8021fa0cf6ac4f79b27f038f77d5e7be072c73ecdf43",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/nubyx-480.webp",
+        "bytes": 47820
+      },
+      {
+        "width": 740,
+        "path": "/assets/images/nubyx-740.webp",
+        "bytes": 82462
+      }
+    ]
+  },
+  "upc": {
+    "source": "projects/upc.jpg",
+    "width": 1536,
+    "height": 2048,
+    "sha256": "cb53fb9106e60bddbb8764d2a2bab821a8ec8794310c880247f0c589fcc2ca68",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/upc-480.webp",
+        "bytes": 59688
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/upc-800.webp",
+        "bytes": 138744
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/upc-1200.webp",
+        "bytes": 272362
+      },
+      {
+        "width": 1536,
+        "path": "/assets/images/upc-1536.webp",
+        "bytes": 418216
+      }
+    ]
+  },
+  "corporate": {
+    "source": "services/marketing.jpg",
+    "width": 2258,
+    "height": 3011,
+    "sha256": "a47cc836cbca073694a038b8a59043d11deb550d3c0785ca8714c00f1ce84f58",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/corporate-480.webp",
+        "bytes": 63186
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/corporate-800.webp",
+        "bytes": 172662
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/corporate-1200.webp",
+        "bytes": 369680
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/corporate-1600.webp",
+        "bytes": 596978
+      }
+    ]
+  },
+  "esports": {
+    "source": "services/production.jpeg",
+    "width": 5423,
+    "height": 3313,
+    "sha256": "c5402f67e686644975e679faddce8c5ee6a80e21c8dc0902bc0f56bd8ed4e74c",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/esports-480.webp",
+        "bytes": 26482
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/esports-800.webp",
+        "bytes": 55210
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/esports-1200.webp",
+        "bytes": 98586
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/esports-1600.webp",
+        "bytes": 141340
+      }
+    ]
+  },
+  "building": {
+    "source": "services/immersive.png",
+    "width": 1821,
+    "height": 958,
+    "sha256": "97ab2555c6ce9be53230d53cd3e82c9a2e49f5e1dfe803b6bf702da296315993",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/building-480.webp",
+        "bytes": 12176
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/building-800.webp",
+        "bytes": 23926
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/building-1200.webp",
+        "bytes": 41078
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/building-1600.webp",
+        "bytes": 60046
+      }
+    ]
+  },
+  "about": {
+    "source": "hero-bg.jpg",
+    "width": 5758,
+    "height": 3713,
+    "sha256": "e7652be28ff42afe00aea431561abc5cb2f75e6a32b648a63e9c52a4d3e7c34f",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/about-480.webp",
+        "bytes": 20570
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/about-800.webp",
+        "bytes": 40564
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/about-1200.webp",
+        "bytes": 68916
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/about-1600.webp",
+        "bytes": 102422
+      }
+    ]
+  },
+  "roblox-main": {
+    "source": "studio/roblox-main.png",
+    "width": 1903,
+    "height": 1087,
+    "sha256": "d702a6e33baa184a4433f271348f2f0d7deab36478549da1e6f2258d5119be15",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/roblox-main-480.webp",
+        "bytes": 21072
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/roblox-main-800.webp",
+        "bytes": 46386
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/roblox-main-1200.webp",
+        "bytes": 90132
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/roblox-main-1600.webp",
+        "bytes": 151004
+      }
+    ]
+  },
+  "roblox-sub1": {
+    "source": "studio/roblox-sub1.png",
+    "width": 1918,
+    "height": 1077,
+    "sha256": "5f73a735113473a6730bdd39ba37fe66141e2a78d681ed24259de5fd5126a944",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/roblox-sub1-480.webp",
+        "bytes": 11970
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/roblox-sub1-800.webp",
+        "bytes": 23996
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/roblox-sub1-1200.webp",
+        "bytes": 42162
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/roblox-sub1-1600.webp",
+        "bytes": 61990
+      }
+    ]
+  },
+  "roblox-sub2": {
+    "source": "studio/roblox-sub2.png",
+    "width": 1918,
+    "height": 1091,
+    "sha256": "3ab1c3c6d9686b0e7dfb58c741feb6c77ad29b742e649863760da1f5a6d85029",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/roblox-sub2-480.webp",
+        "bytes": 27608
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/roblox-sub2-800.webp",
+        "bytes": 61784
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/roblox-sub2-1200.webp",
+        "bytes": 124510
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/roblox-sub2-1600.webp",
+        "bytes": 204948
+      }
+    ]
+  },
+  "minecraft-main": {
+    "source": "studio/minecraft-main.jpeg",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2393e31ebe7e292fd3a1af313a31eda3ded80c355963b40f086e78ad7756a566",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/minecraft-main-480.webp",
+        "bytes": 8276
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/minecraft-main-800.webp",
+        "bytes": 17312
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/minecraft-main-1200.webp",
+        "bytes": 29922
+      },
+      {
+        "width": 1536,
+        "path": "/assets/images/minecraft-main-1536.webp",
+        "bytes": 43912
+      }
+    ]
+  },
+  "minecraft-sub1": {
+    "source": "studio/minecraft-sub1.jpeg",
+    "width": 607,
+    "height": 1080,
+    "sha256": "cfc581438dd0ccabbe444ea1aa1bff4a98f41f47cdba7e8fa96a16424248de0d",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/minecraft-sub1-480.webp",
+        "bytes": 55950
+      },
+      {
+        "width": 607,
+        "path": "/assets/images/minecraft-sub1-607.webp",
+        "bytes": 74532
+      }
+    ]
+  },
+  "minecraft-sub2": {
+    "source": "studio/minecraft-sub2.jpeg",
+    "width": 1280,
+    "height": 853,
+    "sha256": "1c8bd23d13d75e3fb569511e3272dd64383213ee4c62d8cb767742790335d7fa",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/minecraft-sub2-480.webp",
+        "bytes": 12540
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/minecraft-sub2-800.webp",
+        "bytes": 24454
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/minecraft-sub2-1200.webp",
+        "bytes": 38652
+      },
+      {
+        "width": 1280,
+        "path": "/assets/images/minecraft-sub2-1280.webp",
+        "bytes": 44032
+      }
+    ]
+  },
+  "event-ascension": {
+    "source": "events/ascension.png",
+    "width": 1080,
+    "height": 1320,
+    "sha256": "7a8d6bd9f828190487040a736ac9d31c852a113c626dd104e35a24458c4f6eed",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/event-ascension-480.webp",
+        "bytes": 50496
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/event-ascension-800.webp",
+        "bytes": 140384
+      },
+      {
+        "width": 1080,
+        "path": "/assets/images/event-ascension-1080.webp",
+        "bytes": 240150
+      }
+    ]
+  },
+  "event-ignite": {
+    "source": "events/ignite.jpeg",
+    "width": 1600,
+    "height": 1600,
+    "sha256": "e7935e599675b16d69224a5374c5b2e2db54853c84758c66ce9d019ff58cb78c",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/event-ignite-480.webp",
+        "bytes": 41120
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/event-ignite-800.webp",
+        "bytes": 76850
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/event-ignite-1200.webp",
+        "bytes": 118540
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/event-ignite-1600.webp",
+        "bytes": 163276
+      }
+    ]
+  },
+  "event-mobilemasters": {
+    "source": "events/mobilemasters.jpeg",
+    "width": 1080,
+    "height": 1350,
+    "sha256": "ec8ac6b9bbc22596fc0b930ccf19f52916b80db7292c9328f1586fb743c85d77",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/event-mobilemasters-480.webp",
+        "bytes": 37794
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/event-mobilemasters-800.webp",
+        "bytes": 72536
+      },
+      {
+        "width": 1080,
+        "path": "/assets/images/event-mobilemasters-1080.webp",
+        "bytes": 107112
+      }
+    ]
+  }
+}

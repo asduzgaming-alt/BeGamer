@@ -1,0 +1,11 @@
+---
+import {projects,categories} from '../content/projects'; import {text,type Locale} from '../i18n'; import {projectRoute,review} from '../lib/routes';
+import ResponsiveImage from './ResponsiveImage.astro'; import Icon from './Icon.astro';
+const {locale}=Astro.props as {locale:Locale}; const t=text[locale]; const visible=projects.filter(p=>review||p.status==='published');
+---
+<div class="project-browser" data-gallery data-results-label={t.results}>
+ <div class="project-filters" role="group" aria-label={locale==='es'?'Filtrar proyectos':'Filter projects'}>{categories.map((c,i)=><button type="button" data-filter={c} aria-pressed={i===0?'true':'false'}>{t.filters[i]}</button>)}</div>
+ <p class="sr-only" data-result-count aria-live="polite">{visible.length} {t.results}</p>
+ <div class="project-grid">{visible.map((p,i)=><article class:list={['project-card',`project-card--${i}`]} data-categories={p.categories.join(' ')}><a href={projectRoute(locale,p.id)} aria-label={`${t.viewProject}: ${p.title}`}><ResponsiveImage id={p.image} alt={p.alt[locale]}/><div class="project-overlay"><div><span class="project-category">{t.visualArchive}</span><h3>{p.title}</h3></div><span class="circle-arrow"><Icon name="arrow"/></span></div></a></article>)}</div>
+ <p class="empty-state" data-empty hidden={visible.length>0}>{t.empty}</p>
+</div>

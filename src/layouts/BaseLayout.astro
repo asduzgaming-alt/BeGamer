@@ -1,0 +1,45 @@
+---
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import {text,type Locale} from '../i18n';
+import {route,review,type RouteId} from '../lib/routes';
+import Icon from '../components/Icon.astro';
+import Button from '../components/Button.astro';
+import SocialIcon from '../components/SocialIcon.astro';
+import {socials,whatsappUrl} from '../content/social';
+interface Props {locale:Locale; title:string; description:string; path:string; alternate:string; home?:boolean; active?:RouteId; noindex?:boolean;}
+const {locale,title,description,path,alternate,home=false,active='home',noindex=false}=Astro.props;
+const t=text[locale]; const other=locale==='es'?'en':'es';
+const navIds:RouteId[]=['home','services','projects','about','contact'];
+const canonical=new URL(path,'https://begamer.xyz').href;
+const seo={ '@context':'https://schema.org','@type':'Organization',name:'BeGamer Agency',url:'https://begamer.xyz',logo:'https://begamer.xyz/assets/logo.png'};
+---
+<!doctype html>
+<html lang={locale}>
+ <head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#07061A"/>
+  <title>{title}</title><meta name="description" content={description}/><meta name="robots" content={review||noindex?'noindex, nofollow':'index, follow'}/>
+  <link rel="canonical" href={canonical}/><link rel="alternate" hreflang={locale} href={canonical}/><link rel="alternate" hreflang={other} href={new URL(alternate,'https://begamer.xyz').href}/>
+  <link rel="alternate" hreflang="x-default" href={new URL(locale==='es'?path:alternate,'https://begamer.xyz').href}/>
+  <link rel="icon" type="image/png" href="/assets/logo.png"/>
+  <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:type" content="website"/><meta property="og:locale" content={locale==='es'?'es_PE':'en_US'}/><meta property="og:image" content="https://begamer.xyz/assets/images/about-1200.webp"/><meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json" set:html={JSON.stringify(seo).replace(/</g,'\\u003c')}/>
+ </head>
+ <body data-locale={locale}>
+  <a href="#main" class="skip-link">{t.skip}</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="bg-fx" aria-hidden="true"><span class="bg-glow"></span><span class="bg-slab s1" data-depth="-0.12"></span><span class="bg-slab s2" data-depth="0.08"></span><span class="bg-beam b1" data-depth="-0.2"></span><span class="bg-beam b2" data-depth="0.15"></span><span class="bg-beam b3" data-depth="-0.3"></span><span class="bg-grid"></span></div>
+  <header class="site-header">
+   <div class="header-inner">
+    <a class="brand" href={route(locale,'home')} aria-label="BeGamer Agency"><img src="/assets/logo.png" alt="BeGamer Agency" width="54" height="54"/><span class="brand-word" aria-hidden="true">BeGamer<span>Agency</span></span></a>
+    <nav id="main-navigation" class="main-nav" aria-label={locale==='es'?'Navegación principal':'Main navigation'}>{navIds.map((id,i)=><a href={home?`#${id}`:route(locale,id)} data-nav={id} aria-current={active===id?'page':undefined}>{t.nav[i]}</a>)}</nav>
+    <div class="header-actions"><div class="language-switch" aria-label={locale==='es'?'Idioma':'Language'}><a href={locale==='es'?path:alternate} lang="es" class:list={[locale==='es'&&'current']} aria-current={locale==='es'?'true':undefined} data-language>ES</a><span>/</span><a href={locale==='en'?path:alternate} lang="en" class:list={[locale==='en'&&'current']} aria-current={locale==='en'?'true':undefined} data-language>EN</a></div><Button href={home?'#contact':route(locale,'contact')} class="header-cta">{t.talk}</Button><button class="menu-toggle" aria-label={t.menu} aria-expanded="false" aria-controls="main-navigation"><span></span><span></span></button></div>
+   </div>
+  </header>
+  {home&&<nav class="section-nav" aria-label={locale==='es'?'Secciones de la página':'Page sections'}>{['home','services','trusted','projects','about','faq','contact'].map((id,i)=><a href={`#${id}`} aria-label={[t.nav[0],t.nav[1],t.trusted,t.nav[2],t.nav[3],t.faqLabel,t.nav[4]][i]} data-section-link={id}><span class="nav-label">{[t.nav[0],t.nav[1],t.trusted,t.nav[2],t.nav[3],t.faqLabel,t.nav[4]][i]}</span><span class="nav-dot"></span></a>)}</nav>}
+  <main id="main"><slot/></main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand" href={route(locale,'home')} aria-label="BeGamer Agency"><img src="/assets/logo.png" alt="BeGamer Agency" width="52" height="52"/><span class="brand-word" aria-hidden="true">BeGamer<span>Agency</span></span></a><p>{t.footer}</p><div class="social-links footer-social" aria-label={t.follow}>{socials.map(s=><a href={s.url} target="_blank" rel="noopener" aria-label={s.name}><SocialIcon name={s.id}/></a>)}</div><a href={route(locale,'contact')} class="footer-contact">{t.talk}<Icon name="arrow"/></a></div><div class="container footer-bottom"><span>© 2020–{new Date().getFullYear()} BeGamer Agency. {t.rights}</span><a href={route(locale,'privacy')}>{t.privacy}</a><a href="#main" class="back-top" aria-label={locale==='es'?'Volver arriba':'Back to top'}>↑</a></div>{review&&<p class="review-note">{t.review}</p>}</footer>
+  <a class="wa-float" href={whatsappUrl(t.whatsappMessage)} target="_blank" rel="noopener" aria-label={t.whatsappLabel}><SocialIcon name="whatsapp" size={26}/><span>WhatsApp</span></a>
+  <script>import '../lib/client';</script>
+ </body>
+</html>
