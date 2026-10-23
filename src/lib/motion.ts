@@ -40,13 +40,21 @@ export function initMotion(){
   ScrollTrigger.create({trigger:'.mega-marquee',start:'top bottom',end:'bottom top',onUpdate:self=>skew(gsap.utils.clamp(-14,14,self.getVelocity()/-180)),onLeave:()=>skew(0),onLeaveBack:()=>skew(0)});
 
   /* Headings: words rise out of a mask */
-  gsap.utils.toArray<HTMLElement>('.section-heading h2,.contact-copy h2,.faq-section h2').forEach(h=>{
+  gsap.utils.toArray<HTMLElement>('.section-heading h2,.contact-copy h2,.faq-section h2,.internal-title,.detail-layout h2,.detail-cta h2,.legal h1').forEach(h=>{
    gsap.from(splitWords(h),{yPercent:115,rotate:5,duration:1,ease:'expo.out',stagger:.045,scrollTrigger:{trigger:h,start:'top 88%'}});
   });
   ScrollTrigger.batch('.section-intro,.eyebrow:not(.hero .eyebrow),.brand-item,.faq-description,.faq-aside .button',{start:'top 92%',once:true,onEnter:els=>gsap.from(els,{y:34,autoAlpha:0,duration:.8,ease:'power3.out',stagger:.06})});
 
   /* Form keeps full opacity (contrast + autofill), it only slides in */
   ScrollTrigger.batch('.contact-form',{start:'top 92%',once:true,onEnter:els=>gsap.from(els,{y:60,duration:.9,ease:'power3.out'})});
+
+  /* Internal pages: hero copy, framed media that opens on scroll, staggered lists */
+  gsap.from('.internal-hero .breadcrumbs,.internal-hero .eyebrow,.internal-description,.internal-hero .button',{y:24,opacity:0,duration:.8,ease:'power3.out',stagger:.08,delay:.2});
+  gsap.utils.toArray<HTMLElement>('.internal-media').forEach(m=>{
+   gsap.fromTo(m,{clipPath:'inset(8% 10% 8% 10% round 18px)'},{clipPath:'inset(0% 0% 0% 0% round 14px)',ease:'none',scrollTrigger:{trigger:m,start:'top 92%',end:'center 55%',scrub:.6}});
+   const img=m.querySelector('img');if(img)gsap.fromTo(img,{scale:1.18},{scale:1,ease:'none',scrollTrigger:{trigger:m,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+  gsap.utils.toArray<HTMLElement>('.format-list,.process-grid,.media-gallery').forEach(list=>gsap.from(list.children,{y:40,opacity:0,duration:.8,ease:'power3.out',stagger:.09,scrollTrigger:{trigger:list,start:'top 85%'}}));
 
   /* Projects: wipe-in reveal + inner parallax */
   gsap.utils.toArray<HTMLElement>('.project-card').forEach((card,i)=>{
