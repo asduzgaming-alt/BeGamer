@@ -1,115 +1,43 @@
 {
-  "hero": {
-    "source": "projects/ascension.png",
-    "width": 795,
-    "height": 725,
-    "sha256": "7a0d76529ee566519e9050b5df669da73a49c8107ba92ae5537d8d2d15a1ea63",
+  "site/hero-bg": {
+    "source": "site/hero-bg.jpg",
+    "width": 5758,
+    "height": 3713,
+    "sha256": "e7652be28ff42afe00aea431561abc5cb2f75e6a32b648a63e9c52a4d3e7c34f",
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/hero-480.webp",
-        "bytes": 26098
-      },
-      {
-        "width": 795,
-        "path": "/assets/images/hero-795.webp",
-        "bytes": 46850
-      }
-    ]
-  },
-  "ascension": {
-    "source": "projects/ascension.png",
-    "width": 795,
-    "height": 725,
-    "sha256": "7a0d76529ee566519e9050b5df669da73a49c8107ba92ae5537d8d2d15a1ea63",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/ascension-480.webp",
-        "bytes": 26098
-      },
-      {
-        "width": 795,
-        "path": "/assets/images/ascension-795.webp",
-        "bytes": 46850
-      }
-    ]
-  },
-  "ecup": {
-    "source": "projects/ecup.jpg",
-    "width": 4000,
-    "height": 6000,
-    "sha256": "7c1266aedfd84f7051f5605f4973b69034aa0e1251230531ba1f0de68a7c0ff2",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/ecup-480.webp",
-        "bytes": 33384
+        "path": "/assets/images/site/hero-bg-480.webp",
+        "bytes": 27030
       },
       {
         "width": 800,
-        "path": "/assets/images/ecup-800.webp",
-        "bytes": 64746
+        "path": "/assets/images/site/hero-bg-800.webp",
+        "bytes": 52386
       },
       {
         "width": 1200,
-        "path": "/assets/images/ecup-1200.webp",
-        "bytes": 119006
+        "path": "/assets/images/site/hero-bg-1200.webp",
+        "bytes": 95184
       },
       {
         "width": 1600,
-        "path": "/assets/images/ecup-1600.webp",
-        "bytes": 213798
+        "path": "/assets/images/site/hero-bg-1600.webp",
+        "bytes": 144794
+      },
+      {
+        "width": 2000,
+        "path": "/assets/images/site/hero-bg-2000.webp",
+        "bytes": 213580
+      },
+      {
+        "width": 2560,
+        "path": "/assets/images/site/hero-bg-2560.webp",
+        "bytes": 321570
       }
     ]
   },
-  "nubyx": {
-    "source": "projects/nubyx.png",
-    "width": 740,
-    "height": 890,
-    "sha256": "f8ac38d2be1ac107d96a8021fa0cf6ac4f79b27f038f77d5e7be072c73ecdf43",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/nubyx-480.webp",
-        "bytes": 47820
-      },
-      {
-        "width": 740,
-        "path": "/assets/images/nubyx-740.webp",
-        "bytes": 82462
-      }
-    ]
-  },
-  "upc": {
-    "source": "projects/upc.jpg",
-    "width": 1536,
-    "height": 2048,
-    "sha256": "cb53fb9106e60bddbb8764d2a2bab821a8ec8794310c880247f0c589fcc2ca68",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/upc-480.webp",
-        "bytes": 59688
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/upc-800.webp",
-        "bytes": 138744
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/upc-1200.webp",
-        "bytes": 272362
-      },
-      {
-        "width": 1536,
-        "path": "/assets/images/upc-1536.webp",
-        "bytes": 418216
-      }
-    ]
-  },
-  "corporate": {
+  "services/marketing": {
     "source": "services/marketing.jpg",
     "width": 2258,
     "height": 3011,
@@ -117,27 +45,27 @@
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/corporate-480.webp",
-        "bytes": 63186
+        "path": "/assets/images/services/marketing-480.webp",
+        "bytes": 59438
       },
       {
         "width": 800,
-        "path": "/assets/images/corporate-800.webp",
-        "bytes": 172662
+        "path": "/assets/images/services/marketing-800.webp",
+        "bytes": 162526
       },
       {
         "width": 1200,
-        "path": "/assets/images/corporate-1200.webp",
-        "bytes": 369680
+        "path": "/assets/images/services/marketing-1200.webp",
+        "bytes": 346140
       },
       {
         "width": 1600,
-        "path": "/assets/images/corporate-1600.webp",
-        "bytes": 596978
+        "path": "/assets/images/services/marketing-1600.webp",
+        "bytes": 544046
       }
     ]
   },
-  "esports": {
+  "services/production": {
     "source": "services/production.jpeg",
     "width": 5423,
     "height": 3313,
@@ -145,241 +73,27 @@
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/esports-480.webp",
-        "bytes": 26482
+        "path": "/assets/images/services/production-480.webp",
+        "bytes": 24658
       },
       {
         "width": 800,
-        "path": "/assets/images/esports-800.webp",
-        "bytes": 55210
+        "path": "/assets/images/services/production-800.webp",
+        "bytes": 52672
       },
       {
         "width": 1200,
-        "path": "/assets/images/esports-1200.webp",
-        "bytes": 98586
+        "path": "/assets/images/services/production-1200.webp",
+        "bytes": 90586
       },
       {
         "width": 1600,
-        "path": "/assets/images/esports-1600.webp",
-        "bytes": 141340
+        "path": "/assets/images/services/production-1600.webp",
+        "bytes": 131526
       }
     ]
   },
-  "building": {
-    "source": "services/immersive.png",
-    "width": 1821,
-    "height": 958,
-    "sha256": "97ab2555c6ce9be53230d53cd3e82c9a2e49f5e1dfe803b6bf702da296315993",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/building-480.webp",
-        "bytes": 12176
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/building-800.webp",
-        "bytes": 23926
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/building-1200.webp",
-        "bytes": 41078
-      },
-      {
-        "width": 1600,
-        "path": "/assets/images/building-1600.webp",
-        "bytes": 60046
-      }
-    ]
-  },
-  "about": {
-    "source": "hero-bg.jpg",
-    "width": 5758,
-    "height": 3713,
-    "sha256": "e7652be28ff42afe00aea431561abc5cb2f75e6a32b648a63e9c52a4d3e7c34f",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/about-480.webp",
-        "bytes": 20570
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/about-800.webp",
-        "bytes": 40564
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/about-1200.webp",
-        "bytes": 68916
-      },
-      {
-        "width": 1600,
-        "path": "/assets/images/about-1600.webp",
-        "bytes": 102422
-      }
-    ]
-  },
-  "roblox-main": {
-    "source": "studio/roblox-main.png",
-    "width": 1903,
-    "height": 1087,
-    "sha256": "d702a6e33baa184a4433f271348f2f0d7deab36478549da1e6f2258d5119be15",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/roblox-main-480.webp",
-        "bytes": 21072
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/roblox-main-800.webp",
-        "bytes": 46386
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/roblox-main-1200.webp",
-        "bytes": 90132
-      },
-      {
-        "width": 1600,
-        "path": "/assets/images/roblox-main-1600.webp",
-        "bytes": 151004
-      }
-    ]
-  },
-  "roblox-sub1": {
-    "source": "studio/roblox-sub1.png",
-    "width": 1918,
-    "height": 1077,
-    "sha256": "5f73a735113473a6730bdd39ba37fe66141e2a78d681ed24259de5fd5126a944",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/roblox-sub1-480.webp",
-        "bytes": 11970
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/roblox-sub1-800.webp",
-        "bytes": 23996
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/roblox-sub1-1200.webp",
-        "bytes": 42162
-      },
-      {
-        "width": 1600,
-        "path": "/assets/images/roblox-sub1-1600.webp",
-        "bytes": 61990
-      }
-    ]
-  },
-  "roblox-sub2": {
-    "source": "studio/roblox-sub2.png",
-    "width": 1918,
-    "height": 1091,
-    "sha256": "3ab1c3c6d9686b0e7dfb58c741feb6c77ad29b742e649863760da1f5a6d85029",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/roblox-sub2-480.webp",
-        "bytes": 27608
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/roblox-sub2-800.webp",
-        "bytes": 61784
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/roblox-sub2-1200.webp",
-        "bytes": 124510
-      },
-      {
-        "width": 1600,
-        "path": "/assets/images/roblox-sub2-1600.webp",
-        "bytes": 204948
-      }
-    ]
-  },
-  "minecraft-main": {
-    "source": "studio/minecraft-main.jpeg",
-    "width": 1536,
-    "height": 1024,
-    "sha256": "2393e31ebe7e292fd3a1af313a31eda3ded80c355963b40f086e78ad7756a566",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/minecraft-main-480.webp",
-        "bytes": 8276
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/minecraft-main-800.webp",
-        "bytes": 17312
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/minecraft-main-1200.webp",
-        "bytes": 29922
-      },
-      {
-        "width": 1536,
-        "path": "/assets/images/minecraft-main-1536.webp",
-        "bytes": 43912
-      }
-    ]
-  },
-  "minecraft-sub1": {
-    "source": "studio/minecraft-sub1.jpeg",
-    "width": 607,
-    "height": 1080,
-    "sha256": "cfc581438dd0ccabbe444ea1aa1bff4a98f41f47cdba7e8fa96a16424248de0d",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/minecraft-sub1-480.webp",
-        "bytes": 55950
-      },
-      {
-        "width": 607,
-        "path": "/assets/images/minecraft-sub1-607.webp",
-        "bytes": 74532
-      }
-    ]
-  },
-  "minecraft-sub2": {
-    "source": "studio/minecraft-sub2.jpeg",
-    "width": 1280,
-    "height": 853,
-    "sha256": "1c8bd23d13d75e3fb569511e3272dd64383213ee4c62d8cb767742790335d7fa",
-    "variants": [
-      {
-        "width": 480,
-        "path": "/assets/images/minecraft-sub2-480.webp",
-        "bytes": 12540
-      },
-      {
-        "width": 800,
-        "path": "/assets/images/minecraft-sub2-800.webp",
-        "bytes": 24454
-      },
-      {
-        "width": 1200,
-        "path": "/assets/images/minecraft-sub2-1200.webp",
-        "bytes": 38652
-      },
-      {
-        "width": 1280,
-        "path": "/assets/images/minecraft-sub2-1280.webp",
-        "bytes": 44032
-      }
-    ]
-  },
-  "event-ascension": {
+  "events/ascension": {
     "source": "events/ascension.png",
     "width": 1080,
     "height": 1320,
@@ -387,22 +101,22 @@
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/event-ascension-480.webp",
-        "bytes": 50496
+        "path": "/assets/images/events/ascension-480.webp",
+        "bytes": 46444
       },
       {
         "width": 800,
-        "path": "/assets/images/event-ascension-800.webp",
-        "bytes": 140384
+        "path": "/assets/images/events/ascension-800.webp",
+        "bytes": 128298
       },
       {
         "width": 1080,
-        "path": "/assets/images/event-ascension-1080.webp",
-        "bytes": 240150
+        "path": "/assets/images/events/ascension-1080.webp",
+        "bytes": 224900
       }
     ]
   },
-  "event-ignite": {
+  "events/ignite": {
     "source": "events/ignite.jpeg",
     "width": 1600,
     "height": 1600,
@@ -410,27 +124,27 @@
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/event-ignite-480.webp",
-        "bytes": 41120
+        "path": "/assets/images/events/ignite-480.webp",
+        "bytes": 38702
       },
       {
         "width": 800,
-        "path": "/assets/images/event-ignite-800.webp",
-        "bytes": 76850
+        "path": "/assets/images/events/ignite-800.webp",
+        "bytes": 71034
       },
       {
         "width": 1200,
-        "path": "/assets/images/event-ignite-1200.webp",
-        "bytes": 118540
+        "path": "/assets/images/events/ignite-1200.webp",
+        "bytes": 109592
       },
       {
         "width": 1600,
-        "path": "/assets/images/event-ignite-1600.webp",
-        "bytes": 163276
+        "path": "/assets/images/events/ignite-1600.webp",
+        "bytes": 153130
       }
     ]
   },
-  "event-mobilemasters": {
+  "events/mobilemasters": {
     "source": "events/mobilemasters.jpeg",
     "width": 1080,
     "height": 1350,
@@ -438,18 +152,806 @@
     "variants": [
       {
         "width": 480,
-        "path": "/assets/images/event-mobilemasters-480.webp",
-        "bytes": 37794
+        "path": "/assets/images/events/mobilemasters-480.webp",
+        "bytes": 34946
       },
       {
         "width": 800,
-        "path": "/assets/images/event-mobilemasters-800.webp",
-        "bytes": 72536
+        "path": "/assets/images/events/mobilemasters-800.webp",
+        "bytes": 67210
       },
       {
         "width": 1080,
-        "path": "/assets/images/event-mobilemasters-1080.webp",
-        "bytes": 107112
+        "path": "/assets/images/events/mobilemasters-1080.webp",
+        "bytes": 98588
+      }
+    ]
+  },
+  "projects/ascension-league/ascension-archivo": {
+    "source": "projects/ascension-league/ascension-archivo.png",
+    "width": 795,
+    "height": 725,
+    "sha256": "7a0d76529ee566519e9050b5df669da73a49c8107ba92ae5537d8d2d15a1ea63",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ascension-league/ascension-archivo-480.webp",
+        "bytes": 23996
+      },
+      {
+        "width": 795,
+        "path": "/assets/images/projects/ascension-league/ascension-archivo-795.webp",
+        "bytes": 43460
+      }
+    ]
+  },
+  "projects/ascension-league/second-season-1": {
+    "source": "projects/ascension-league/second-season-1.jpg",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "12ad45cda078000938e0de76892545d30b5a5454cf83aa95415201c05e6e3d69",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ascension-league/second-season-1-480.webp",
+        "bytes": 32388
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ascension-league/second-season-1-800.webp",
+        "bytes": 69068
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ascension-league/second-season-1-1200.webp",
+        "bytes": 133950
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ascension-league/second-season-1-1600.webp",
+        "bytes": 221518
+      }
+    ]
+  },
+  "projects/ascension-league/second-season-2": {
+    "source": "projects/ascension-league/second-season-2.jpg",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "3faf34f8c8e52c911b22e5e54c12014dd1d6e8398452022c2e460a8a9a3e6434",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ascension-league/second-season-2-480.webp",
+        "bytes": 21712
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ascension-league/second-season-2-800.webp",
+        "bytes": 45722
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ascension-league/second-season-2-1200.webp",
+        "bytes": 89234
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ascension-league/second-season-2-1600.webp",
+        "bytes": 157722
+      }
+    ]
+  },
+  "projects/bonoxs/bonoxs-mundo": {
+    "source": "projects/bonoxs/bonoxs-mundo.png",
+    "width": 1821,
+    "height": 958,
+    "sha256": "97ab2555c6ce9be53230d53cd3e82c9a2e49f5e1dfe803b6bf702da296315993",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/bonoxs/bonoxs-mundo-480.webp",
+        "bytes": 11128
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/bonoxs/bonoxs-mundo-800.webp",
+        "bytes": 22046
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/bonoxs/bonoxs-mundo-1200.webp",
+        "bytes": 37626
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/bonoxs/bonoxs-mundo-1600.webp",
+        "bytes": 55486
+      }
+    ]
+  },
+  "projects/ecup-utp/ecup-archivo": {
+    "source": "projects/ecup-utp/ecup-archivo.jpg",
+    "width": 4000,
+    "height": 6000,
+    "sha256": "7c1266aedfd84f7051f5605f4973b69034aa0e1251230531ba1f0de68a7c0ff2",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ecup-utp/ecup-archivo-480.webp",
+        "bytes": 31290
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ecup-utp/ecup-archivo-800.webp",
+        "bytes": 58810
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ecup-utp/ecup-archivo-1200.webp",
+        "bytes": 106526
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ecup-utp/ecup-archivo-1600.webp",
+        "bytes": 175994
+      }
+    ]
+  },
+  "projects/ecup-utp/ecup-utp-1": {
+    "source": "projects/ecup-utp/ecup-utp-1.jpg",
+    "width": 6000,
+    "height": 4000,
+    "sha256": "84cfd20a833b200fb6a7dc70714696afb0739e8d949cd00a832b122c3fe01afe",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-1-480.webp",
+        "bytes": 23306
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-1-800.webp",
+        "bytes": 47946
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-1-1200.webp",
+        "bytes": 79706
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-1-1600.webp",
+        "bytes": 121634
+      }
+    ]
+  },
+  "projects/ecup-utp/ecup-utp-2": {
+    "source": "projects/ecup-utp/ecup-utp-2.jpg",
+    "width": 5773,
+    "height": 3712,
+    "sha256": "7c733dc3bc44ffdf0deaabb954ee6d347fbd0082c0688e15b5462da5f38676b4",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-2-480.webp",
+        "bytes": 23086
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-2-800.webp",
+        "bytes": 44984
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-2-1200.webp",
+        "bytes": 76252
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-2-1600.webp",
+        "bytes": 109164
+      }
+    ]
+  },
+  "projects/ecup-utp/ecup-utp-3": {
+    "source": "projects/ecup-utp/ecup-utp-3.jpg",
+    "width": 4000,
+    "height": 5306,
+    "sha256": "764d7b9933a88f2928787cff0372ebaa9a67d483e309d47cfeecb3d74967a9d5",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-3-480.webp",
+        "bytes": 24082
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-3-800.webp",
+        "bytes": 50064
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-3-1200.webp",
+        "bytes": 90428
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-3-1600.webp",
+        "bytes": 226160
+      }
+    ]
+  },
+  "projects/ecup-utp/ecup-utp-4": {
+    "source": "projects/ecup-utp/ecup-utp-4.jpg",
+    "width": 5284,
+    "height": 3618,
+    "sha256": "b470766174ebd541c2b4cba096d8e3eda9f6ceced9c61d6cbb41aeb573a0abe9",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-4-480.webp",
+        "bytes": 17242
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-4-800.webp",
+        "bytes": 33458
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-4-1200.webp",
+        "bytes": 55338
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/ecup-utp/ecup-utp-4-1600.webp",
+        "bytes": 80392
+      }
+    ]
+  },
+  "projects/esg-arena/esg-arena": {
+    "source": "projects/esg-arena/esg-arena.jpg",
+    "width": 3024,
+    "height": 4032,
+    "sha256": "4bb70daff72fa91a540d50829ddd212b293ae24ee6ed87a5ad6e7151822e03ee",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/esg-arena/esg-arena-480.webp",
+        "bytes": 50356
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/esg-arena/esg-arena-800.webp",
+        "bytes": 121646
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/esg-arena/esg-arena-1200.webp",
+        "bytes": 237868
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/esg-arena/esg-arena-1600.webp",
+        "bytes": 368252
+      }
+    ]
+  },
+  "projects/floril-just-dance/floril-just-dance": {
+    "source": "projects/floril-just-dance/floril-just-dance.jpg",
+    "width": 1440,
+    "height": 1800,
+    "sha256": "d07fad293ef2969994dc061711a0ceaa3f2d11af8a5d6956c8dbbbd7acdbb185",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/floril-just-dance/floril-just-dance-480.webp",
+        "bytes": 68396
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/floril-just-dance/floril-just-dance-800.webp",
+        "bytes": 160522
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/floril-just-dance/floril-just-dance-1200.webp",
+        "bytes": 313628
+      },
+      {
+        "width": 1440,
+        "path": "/assets/images/projects/floril-just-dance/floril-just-dance-1440.webp",
+        "bytes": 421634
+      }
+    ]
+  },
+  "projects/floril-smart-gamer/floril": {
+    "source": "projects/floril-smart-gamer/floril.jpg",
+    "width": 3024,
+    "height": 4032,
+    "sha256": "38de8d428c6a55d3d900e6b06d6f749442e92d70c5773e7e76cfa82b76d8de64",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/floril-smart-gamer/floril-480.webp",
+        "bytes": 66946
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/floril-smart-gamer/floril-800.webp",
+        "bytes": 140190
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/floril-smart-gamer/floril-1200.webp",
+        "bytes": 247740
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/floril-smart-gamer/floril-1600.webp",
+        "bytes": 367840
+      }
+    ]
+  },
+  "projects/mobile-masters/mobile-masters": {
+    "source": "projects/mobile-masters/mobile-masters.jpg",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "887046bf23ac7ca5312c15a3dc6fea61877cfb6900d090865cc804c09873fee7",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/mobile-masters/mobile-masters-480.webp",
+        "bytes": 28628
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/mobile-masters/mobile-masters-800.webp",
+        "bytes": 59888
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/mobile-masters/mobile-masters-1200.webp",
+        "bytes": 111218
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/mobile-masters/mobile-masters-1600.webp",
+        "bytes": 186348
+      }
+    ]
+  },
+  "projects/nubyx-comicon/nubyx": {
+    "source": "projects/nubyx-comicon/nubyx.png",
+    "width": 740,
+    "height": 890,
+    "sha256": "f8ac38d2be1ac107d96a8021fa0cf6ac4f79b27f038f77d5e7be072c73ecdf43",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/nubyx-comicon/nubyx-480.webp",
+        "bytes": 44318
+      },
+      {
+        "width": 740,
+        "path": "/assets/images/projects/nubyx-comicon/nubyx-740.webp",
+        "bytes": 75580
+      }
+    ]
+  },
+  "projects/oxxo-goats-fest/oxxo-1": {
+    "source": "projects/oxxo-goats-fest/oxxo-1.jpg",
+    "width": 3744,
+    "height": 2496,
+    "sha256": "090e5a9bdf9e2075cd3995e76c683ffaf30f5e82c66f7dadbd2b28b395369fd0",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-1-480.webp",
+        "bytes": 18480
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-1-800.webp",
+        "bytes": 37814
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-1-1200.webp",
+        "bytes": 64856
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-1-1600.webp",
+        "bytes": 97716
+      }
+    ]
+  },
+  "projects/oxxo-goats-fest/oxxo-2": {
+    "source": "projects/oxxo-goats-fest/oxxo-2.jpg",
+    "width": 4176,
+    "height": 2784,
+    "sha256": "e96dd18b5d98accd861066c76f2f63fe8df075823b5536292b07d6505380820c",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-2-480.webp",
+        "bytes": 16794
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-2-800.webp",
+        "bytes": 30878
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-2-1200.webp",
+        "bytes": 51378
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/oxxo-goats-fest/oxxo-2-1600.webp",
+        "bytes": 74946
+      }
+    ]
+  },
+  "projects/universo-gamer-real-plaza/universo-gamer": {
+    "source": "projects/universo-gamer-real-plaza/universo-gamer.jpg",
+    "width": 3024,
+    "height": 4032,
+    "sha256": "d5ff515172874fc94f06e1a3472977873bf7c5b0621f6c6e78eb6858c825f986",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/universo-gamer-real-plaza/universo-gamer-480.webp",
+        "bytes": 54842
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/universo-gamer-real-plaza/universo-gamer-800.webp",
+        "bytes": 124952
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/universo-gamer-real-plaza/universo-gamer-1200.webp",
+        "bytes": 236690
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/universo-gamer-real-plaza/universo-gamer-1600.webp",
+        "bytes": 357660
+      }
+    ]
+  },
+  "projects/upc/upc-1": {
+    "source": "projects/upc/upc-1.jpg",
+    "width": 1536,
+    "height": 2048,
+    "sha256": "cb53fb9106e60bddbb8764d2a2bab821a8ec8794310c880247f0c589fcc2ca68",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/upc/upc-1-480.webp",
+        "bytes": 55024
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/upc/upc-1-800.webp",
+        "bytes": 126284
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/upc/upc-1-1200.webp",
+        "bytes": 252530
+      },
+      {
+        "width": 1536,
+        "path": "/assets/images/projects/upc/upc-1-1536.webp",
+        "bytes": 387988
+      }
+    ]
+  },
+  "projects/upc/upc-2": {
+    "source": "projects/upc/upc-2.jpg",
+    "width": 3024,
+    "height": 4032,
+    "sha256": "1709642db259b35500090adfb755211f514337eb4f3da1a528d6b50b7b6b11f2",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/upc/upc-2-480.webp",
+        "bytes": 52986
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/upc/upc-2-800.webp",
+        "bytes": 135974
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/upc/upc-2-1200.webp",
+        "bytes": 282152
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/upc/upc-2-1600.webp",
+        "bytes": 468476
+      }
+    ]
+  },
+  "projects/upc/upc-3": {
+    "source": "projects/upc/upc-3.jpg",
+    "width": 3024,
+    "height": 4032,
+    "sha256": "b34dae9f77c8d9172dbf33bc26b5ad15e41c6cbedd65f2258f77a3e3946b3fa3",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/projects/upc/upc-3-480.webp",
+        "bytes": 33294
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/projects/upc/upc-3-800.webp",
+        "bytes": 70966
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/projects/upc/upc-3-1200.webp",
+        "bytes": 125484
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/projects/upc/upc-3-1600.webp",
+        "bytes": 195356
+      }
+    ]
+  },
+  "studio/minecraft/minecraft-main": {
+    "source": "studio/minecraft/minecraft-main.jpeg",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2393e31ebe7e292fd3a1af313a31eda3ded80c355963b40f086e78ad7756a566",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/minecraft/minecraft-main-480.webp",
+        "bytes": 7578
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/studio/minecraft/minecraft-main-800.webp",
+        "bytes": 15674
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/studio/minecraft/minecraft-main-1200.webp",
+        "bytes": 27038
+      },
+      {
+        "width": 1536,
+        "path": "/assets/images/studio/minecraft/minecraft-main-1536.webp",
+        "bytes": 40116
+      }
+    ]
+  },
+  "studio/minecraft/minecraft-sub1": {
+    "source": "studio/minecraft/minecraft-sub1.jpeg",
+    "width": 607,
+    "height": 1080,
+    "sha256": "cfc581438dd0ccabbe444ea1aa1bff4a98f41f47cdba7e8fa96a16424248de0d",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/minecraft/minecraft-sub1-480.webp",
+        "bytes": 51490
+      },
+      {
+        "width": 607,
+        "path": "/assets/images/studio/minecraft/minecraft-sub1-607.webp",
+        "bytes": 69636
+      }
+    ]
+  },
+  "studio/minecraft/minecraft-sub2": {
+    "source": "studio/minecraft/minecraft-sub2.jpeg",
+    "width": 1280,
+    "height": 853,
+    "sha256": "1c8bd23d13d75e3fb569511e3272dd64383213ee4c62d8cb767742790335d7fa",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/minecraft/minecraft-sub2-480.webp",
+        "bytes": 11582
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/studio/minecraft/minecraft-sub2-800.webp",
+        "bytes": 21652
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/studio/minecraft/minecraft-sub2-1200.webp",
+        "bytes": 36072
+      },
+      {
+        "width": 1280,
+        "path": "/assets/images/studio/minecraft/minecraft-sub2-1280.webp",
+        "bytes": 40276
+      }
+    ]
+  },
+  "studio/roblox/roblox-main": {
+    "source": "studio/roblox/roblox-main.png",
+    "width": 1903,
+    "height": 1087,
+    "sha256": "d702a6e33baa184a4433f271348f2f0d7deab36478549da1e6f2258d5119be15",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/roblox/roblox-main-480.webp",
+        "bytes": 19500
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/studio/roblox/roblox-main-800.webp",
+        "bytes": 43448
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/studio/roblox/roblox-main-1200.webp",
+        "bytes": 82580
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/studio/roblox/roblox-main-1600.webp",
+        "bytes": 138164
+      }
+    ]
+  },
+  "studio/roblox/roblox-sub1": {
+    "source": "studio/roblox/roblox-sub1.png",
+    "width": 1918,
+    "height": 1077,
+    "sha256": "5f73a735113473a6730bdd39ba37fe66141e2a78d681ed24259de5fd5126a944",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/roblox/roblox-sub1-480.webp",
+        "bytes": 11082
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/studio/roblox/roblox-sub1-800.webp",
+        "bytes": 22222
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/studio/roblox/roblox-sub1-1200.webp",
+        "bytes": 38966
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/studio/roblox/roblox-sub1-1600.webp",
+        "bytes": 57240
+      }
+    ]
+  },
+  "studio/roblox/roblox-sub2": {
+    "source": "studio/roblox/roblox-sub2.png",
+    "width": 1918,
+    "height": 1091,
+    "sha256": "3ab1c3c6d9686b0e7dfb58c741feb6c77ad29b742e649863760da1f5a6d85029",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/roblox/roblox-sub2-480.webp",
+        "bytes": 25670
+      },
+      {
+        "width": 800,
+        "path": "/assets/images/studio/roblox/roblox-sub2-800.webp",
+        "bytes": 57468
+      },
+      {
+        "width": 1200,
+        "path": "/assets/images/studio/roblox/roblox-sub2-1200.webp",
+        "bytes": 114256
+      },
+      {
+        "width": 1600,
+        "path": "/assets/images/studio/roblox/roblox-sub2-1600.webp",
+        "bytes": 191080
+      }
+    ]
+  },
+  "studio/true-fighter/true-fighter-1": {
+    "source": "studio/true-fighter/true-fighter-1.jpeg",
+    "width": 770,
+    "height": 429,
+    "sha256": "bf8ea291243ae4e8a7e720aaa38e75d10db9417cd66250d4c15d90b5adaa0f9e",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/true-fighter/true-fighter-1-480.webp",
+        "bytes": 14566
+      },
+      {
+        "width": 770,
+        "path": "/assets/images/studio/true-fighter/true-fighter-1-770.webp",
+        "bytes": 27154
+      }
+    ]
+  },
+  "studio/true-fighter/true-fighter-2": {
+    "source": "studio/true-fighter/true-fighter-2.jpeg",
+    "width": 768,
+    "height": 434,
+    "sha256": "41e68a9b28278257c66b11f4faebe2537d0219f1620d3d3d43e2eaa125e57973",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/true-fighter/true-fighter-2-480.webp",
+        "bytes": 18040
+      },
+      {
+        "width": 768,
+        "path": "/assets/images/studio/true-fighter/true-fighter-2-768.webp",
+        "bytes": 36546
+      }
+    ]
+  },
+  "studio/vxa-club/vxa-club-1": {
+    "source": "studio/vxa-club/vxa-club-1.jpeg",
+    "width": 762,
+    "height": 428,
+    "sha256": "afeb0f5cc9c141270430496639c4321b94ea7e22849d34f9bf3f0b3a2231818b",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/vxa-club/vxa-club-1-480.webp",
+        "bytes": 25774
+      },
+      {
+        "width": 762,
+        "path": "/assets/images/studio/vxa-club/vxa-club-1-762.webp",
+        "bytes": 53732
+      }
+    ]
+  },
+  "studio/vxa-club/vxa-club-2": {
+    "source": "studio/vxa-club/vxa-club-2.jpeg",
+    "width": 770,
+    "height": 434,
+    "sha256": "ba38b7fc4843ac69284e188e46299669e958bb1474938a34b34d8f77163c438b",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/vxa-club/vxa-club-2-480.webp",
+        "bytes": 18702
+      },
+      {
+        "width": 770,
+        "path": "/assets/images/studio/vxa-club/vxa-club-2-770.webp",
+        "bytes": 37898
+      }
+    ]
+  },
+  "studio/vxa-club/vxa-club-3": {
+    "source": "studio/vxa-club/vxa-club-3.jpeg",
+    "width": 765,
+    "height": 436,
+    "sha256": "9d2b6597568aa9fdf61996b0a97bf29f002e4ddc9ad6b682bfabb8407047f706",
+    "variants": [
+      {
+        "width": 480,
+        "path": "/assets/images/studio/vxa-club/vxa-club-3-480.webp",
+        "bytes": 20892
+      },
+      {
+        "width": 765,
+        "path": "/assets/images/studio/vxa-club/vxa-club-3-765.webp",
+        "bytes": 43482
       }
     ]
   }

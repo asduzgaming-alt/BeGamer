@@ -2,7 +2,7 @@
 import assets from '../content/assets.json';
 interface Props {id:string; alt:string; class?:string; eager?:boolean; sizes?:string;}
 const {id,alt,class:className='',eager=false,sizes='(max-width: 767px) 100vw, 50vw'}=Astro.props;
-const asset=assets[id as keyof typeof assets];
+const asset=assets[id as keyof typeof assets];if(!asset)throw new Error(`Imagen no encontrada en assets.json: ${id}`);
 const last=asset.variants[asset.variants.length-1];
 ---
 <img src={last.path} srcset={asset.variants.map(v=>`${v.path} ${v.width}w`).join(', ')} sizes={sizes} alt={alt} width={asset.width} height={asset.height} class={className} loading={eager?'eager':'lazy'} decoding="async" fetchpriority={eager?'high':'auto'} />

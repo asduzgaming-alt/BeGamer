@@ -1,3 +1,6 @@
+// Al entrar a una página nueva (no al volver atrás) se empieza siempre arriba, salvo que el enlace apunte a una sección (#id).
+const nav0=performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming|undefined;
+if(!location.hash&&nav0?.type!=='back_forward'){scrollTo(0,0);document.documentElement.scrollIntoView({block:'start'});}
 import {categories} from '../content/projects';
 const locale=document.documentElement.lang;
 const menu=document.querySelector<HTMLButtonElement>('.menu-toggle');
@@ -19,6 +22,7 @@ document.querySelector('[data-brand-prev]')?.addEventListener('click',()=>track?
 document.querySelector('[data-brand-next]')?.addEventListener('click',()=>track?.scrollBy({left:350,behavior:reduced.matches?'instant':'smooth'}));
 document.querySelectorAll<HTMLElement>('[data-gallery]').forEach(gallery=>{
  const buttons=gallery.querySelectorAll<HTMLButtonElement>('[data-filter]');const cards=gallery.querySelectorAll<HTMLElement>('[data-categories]');
+ if(!buttons.length)return;
  function filter(value:string,update=false){const category=categories.includes(value)?value:'all';let count=0;cards.forEach(card=>{const show=category==='all'||card.dataset.categories?.split(' ').includes(category);card.hidden=!show;if(show)count++;});buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===category)));const empty=gallery.querySelector<HTMLElement>('[data-empty]');if(empty)empty.hidden=count>0;const status=gallery.querySelector('[data-result-count]');if(status)status.textContent=`${count} ${gallery.dataset.resultsLabel}`;if(update){const url=new URL(location.href);if(category==='all')url.searchParams.delete('category');else url.searchParams.set('category',category);history.pushState({},'',url);}}
  buttons.forEach(button=>button.addEventListener('click',()=>filter(button.dataset.filter||'all',true)));
  filter(new URLSearchParams(location.search).get('category')||'all');addEventListener('popstate',()=>filter(new URLSearchParams(location.search).get('category')||'all'));

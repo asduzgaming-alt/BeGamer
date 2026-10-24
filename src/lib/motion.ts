@@ -81,9 +81,6 @@ export function initMotion(){
   gsap.fromTo('.services-grid .service-image img',{yPercent:-8,scale:1.15},{yPercent:8,scale:1.15,ease:'none',scrollTrigger:{trigger:'.services-grid',start:'top bottom',end:'bottom top',scrub:true}});
 
   /* Brands: stage photo zooms out and opens like a curtain */
-  if(document.querySelector('.trusted-stage'))gsap.timeline({scrollTrigger:{trigger:'.trusted-stage',start:'top 95%',end:'bottom 70%',scrub:.6}})
-   .fromTo('.trusted-stage',{clipPath:'inset(0% 18% 0% 18% round 18px)'},{clipPath:'inset(0% 0% 0% 0% round 14px)',ease:'none'},0)
-   .fromTo('.trusted-stage img',{scale:1.35},{scale:1,ease:'none'},0);
 
   /* About: the photo opens from a narrow window */
   gsap.fromTo('.about-photo',{clipPath:'polygon(30% 25%,70% 25%,75% 35%,75% 75%,25% 75%,25% 35%)'},{clipPath:'polygon(5% 0%,95% 0%,100% 16%,100% 100%,0% 100%,0% 16%)',ease:'none',scrollTrigger:{trigger:'.about-photo',start:'top 95%',end:'center 55%',scrub:.6}});

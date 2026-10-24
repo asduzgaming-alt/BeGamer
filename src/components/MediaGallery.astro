@@ -1,0 +1,8 @@
+---
+import assets from '../content/assets.json'; import ResponsiveImage from './ResponsiveImage.astro';
+// Galería con lightbox: cada id es una imagen de assets.json; los afiches (events/) se muestran completos.
+interface Props {ids:string[]; alt:(id:string,i:number)=>string; enlarge:string;}
+const {ids,alt,enlarge}=Astro.props;
+const full=(id:string)=>assets[id as keyof typeof assets].variants.at(-1)!.path;
+---
+<div class="media-gallery">{ids.map((id,i)=><button type="button" class:list={[id.startsWith('events/')&&'poster']} data-lightbox={full(id)} aria-label={`${enlarge} ${i+1}`}><ResponsiveImage id={id} alt={alt(id,i)} sizes="(max-width: 767px) 100vw, 33vw"/></button>)}</div>
