@@ -1,0 +1,78 @@
+# GitHub builds the Astro site on every push to main.
+# Deployment stays OFF until repository variable BEGAMER_DEPLOY_ENABLED=true.
+# Configure an FTPS account restricted to begamer.xyz's Document Root.
+# Do not enable until privacy policy, SMTP/contact endpoint and SSL are validated.
+name: BeGamer - Build and deploy to Namecheap
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: begamer-namecheap
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build review site
+        run: npm run build
+
+      - name: Verify generated files
+        shell: bash
+        run: |
+          test -f dist/index.html
+          test -f dist/es/index.html
+          test -f dist/.htaccess
+          test -f dist/robots.txt
+          test -f dist/api/contact.php
+
+      - name: Check FTPS credentials are configured
+        if: ${{ vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
+        env:
+          FTPS_HOST: ${{ secrets.BEGAMER_FTPS_HOST }}
+          FTPS_USER: ${{ secrets.BEGAMER_FTPS_USER }}
+          FTPS_PASSWORD: ${{ secrets.BEGAMER_FTPS_PASSWORD }}
+        run: |
+          test -n "$FTPS_HOST" || { echo "Missing BEGAMER_FTPS_HOST secret"; exit 1; }
+          test -n "$FTPS_USER" || { echo "Missing BEGAMER_FTPS_USER secret"; exit 1; }
+          test -n "$FTPS_PASSWORD" || { echo "Missing BEGAMER_FTPS_PASSWORD secret"; exit 1; }
+
+      - name: Deploy dist to begamer.xyz via encrypted FTPS
+        if: ${{ vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.BEGAMER_FTPS_HOST }}
+          username: ${{ secrets.BEGAMER_FTPS_USER }}
+          password: ${{ secrets.BEGAMER_FTPS_PASSWORD }}
+          protocol: ftps
+          port: 21
+          security: strict
+          local-dir: ./dist/
+          # The dedicated FTP account must be jailed to begamer.xyz's Document Root.
+          server-dir: ./
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.well-known/**
