@@ -1,8 +1,10 @@
 # GitHub builds the Astro site on every push to main.
 # Deployment stays OFF until repository variable BEGAMER_DEPLOY_ENABLED=true.
 # Configure an FTPS account restricted to begamer.xyz's Document Root.
-# Safe default: enabled runs are dry-run until BEGAMER_DEPLOY_MODE=publish.
-# Only allow publishing after privacy policy, SMTP/contact endpoint and SSL are validated.
+# Manual 'Run workflow' ALWAYS previews FTPS changes without uploading.
+# Pushes are gated off until BEGAMER_DEPLOY_ENABLED=true.
+# Publishing on push requires BOTH BEGAMER_DEPLOY_ENABLED=true and BEGAMER_DEPLOY_MODE=publish.
+# Do not activate production until privacy policy, SMTP/contact endpoint and SSL are validated.
 name: BeGamer - Build and deploy to Namecheap
 
 on:
@@ -48,7 +50,7 @@ jobs:
           test -f dist/api/contact.php
 
       - name: Check FTPS credentials are configured
-        if: ${{ vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
+        if: ${{ github.event_name == 'workflow_dispatch' || vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
         env:
           FTPS_HOST: ${{ secrets.BEGAMER_FTPS_HOST }}
           FTPS_USER: ${{ secrets.BEGAMER_FTPS_USER }}
@@ -58,8 +60,8 @@ jobs:
           test -n "$FTPS_USER" || { echo "Missing BEGAMER_FTPS_USER secret"; exit 1; }
           test -n "$FTPS_PASSWORD" || { echo "Missing BEGAMER_FTPS_PASSWORD secret"; exit 1; }
 
-      - name: Preview or deploy dist to begamer.xyz via encrypted FTPS
-        if: ${{ vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
+      - name: Preview FTPS changes on manual run or gated deploy on push
+        if: ${{ github.event_name == 'workflow_dispatch' || vars.BEGAMER_DEPLOY_ENABLED == 'true' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.BEGAMER_FTPS_HOST }}
@@ -68,7 +70,7 @@ jobs:
           protocol: ftps
           port: 21
           security: strict
-          dry-run: ${{ vars.BEGAMER_DEPLOY_MODE != 'publish' }}
+          dry-run: ${{ github.event_name == 'workflow_dispatch' || vars.BEGAMER_DEPLOY_MODE != 'publish' }}
           local-dir: ./dist/
           # The dedicated FTP account must be jailed to begamer.xyz's Document Root.
           server-dir: ./
