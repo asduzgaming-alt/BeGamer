@@ -12,3 +12,4 @@ server/private/storage/
 server/private/vendor/
 tools/
 *.log
+/_deploy/

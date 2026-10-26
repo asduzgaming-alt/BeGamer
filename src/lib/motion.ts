@@ -77,7 +77,7 @@ export function initMotion(){
    .to('.hero-diagonals',{x:220,ease:'none'},0);
 
   /* Services: cards flip up from the floor, one after another */
-  gsap.from('.services-grid .service-card',{y:110,rotateX:-24,transformPerspective:1100,transformOrigin:'50% 100%',opacity:0,duration:1.1,ease:'expo.out',stagger:.12,scrollTrigger:{trigger:'.services-grid',start:'top 82%'}});
+  gsap.from('.services-grid .service-card',{y:90,opacity:0,duration:1,ease:'expo.out',stagger:.12,clearProps:'transform',scrollTrigger:{trigger:'.services-grid',start:'top 82%'}});
   gsap.fromTo('.services-grid .service-image img',{yPercent:-8,scale:1.15},{yPercent:8,scale:1.15,ease:'none',scrollTrigger:{trigger:'.services-grid',start:'top bottom',end:'bottom top',scrub:true}});
 
   /* Brands: stage photo zooms out and opens like a curtain */
