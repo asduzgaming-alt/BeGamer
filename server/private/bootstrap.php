@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-function respond(int $status, array $data): never {http_response_code($status);echo json_encode($data,JSON_UNESCAPED_UNICODE);exit;}
+function respond(int $status, array $data): void {http_response_code($status);echo json_encode($data,JSON_UNESCAPED_UNICODE);exit;}
 set_exception_handler(function(Throwable $e):void{error_log('begamer internal_error');respond(503,['error'=>'unavailable']);});
 $configFile=getenv('BEGAMER_CONFIG') ?: __DIR__.'/config.php';
 if (!is_file($configFile)) respond(503,['error'=>'unavailable']);

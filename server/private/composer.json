@@ -1,1 +1,1 @@
-{"name":"begamer/contact","require":{"php":"^8.2","ext-mbstring":"*","ext-openssl":"*","phpmailer/phpmailer":"^7.0"},"config":{"sort-packages":true}}
+{"name":"begamer/contact","require":{"php":"^8.0","ext-mbstring":"*","ext-openssl":"*","phpmailer/phpmailer":"^7.0"},"config":{"sort-packages":true}}
