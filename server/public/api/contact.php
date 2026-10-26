@@ -45,6 +45,7 @@ try {
     error_log('begamer contact accepted '.$id);
     respond(200,['ok'=>true,'requestId'=>$id]);
 } catch (Throwable $e) {
-    error_log('begamer contact transport_failed '.$id);
+    $detail=isset($mail)&&$mail->ErrorInfo!==''?$mail->ErrorInfo:$e->getMessage();
+    error_log('begamer contact transport_failed '.$id.' '.substr(preg_replace('/\s+/',' ',$detail),0,300));
     respond(503,['error'=>'network','requestId'=>$id]);
 }
