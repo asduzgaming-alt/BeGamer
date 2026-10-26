@@ -1,16 +1,25 @@
 # GitHub builds the Astro site on every push to main.
 # Deployment stays OFF until repository variable BEGAMER_DEPLOY_ENABLED=true.
 # Configure an FTPS account restricted to begamer.xyz's Document Root.
-# Manual 'Run workflow' ALWAYS previews FTPS changes without uploading.
+# Manual 'Run workflow' defaults to safe preview; explicitly choosing publish uploads files.
 # Pushes are gated off until BEGAMER_DEPLOY_ENABLED=true.
 # Publishing on push requires BOTH BEGAMER_DEPLOY_ENABLED=true and BEGAMER_DEPLOY_MODE=publish.
-# Do not activate production until privacy policy, SMTP/contact endpoint and SSL are validated.
+# This deploys a review build (noindex; contact PHP requires later config). User accepted launching with those limitations.
 name: BeGamer - Build and deploy to Namecheap
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      deploy_mode:
+        description: 'Choose preview (no upload) or publish (real upload)'
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - publish
 
 permissions:
   contents: read
@@ -70,7 +79,7 @@ jobs:
           protocol: ftps
           port: 21
           security: strict
-          dry-run: ${{ github.event_name == 'workflow_dispatch' || vars.BEGAMER_DEPLOY_MODE != 'publish' }}
+          dry-run: ${{ (github.event_name == 'workflow_dispatch' && inputs.deploy_mode != 'publish') || (github.event_name == 'push' && vars.BEGAMER_DEPLOY_MODE != 'publish') }}
           local-dir: ./dist/
           # The dedicated FTP account must be jailed to begamer.xyz's Document Root.
           server-dir: ./
